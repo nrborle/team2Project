@@ -2,7 +2,7 @@ window.onload = start;
 
 function start(){
   //get the participant list so we know how many participants to check for.
-  var participantList;
+  var participantList = "<?php echo $participantList ?>";
   var currentForm = document.getElementsByTagName("form");
   currentForm[0].addEventListener("submit", validate, true);
 }
