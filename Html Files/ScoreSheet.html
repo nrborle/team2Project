@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+	table, td{border: solid 1px black;}
+	.cell {width: 3em; border: none;}
+</style>
+</head>
+<body>
+<form>
+<table id="prepared">
+<caption>Prepared Speech</caption>
+<thead><th>Introduction</th></thead>
+<tr><td>Aroused interest</td>
+<td><input type="number" name="PR0C0" min="0" max="10" class="cell" id="PR0C0"></td>
+<td><input type="number" name="PR0C1" min="0" max="10" class="cell" id="PR0C1"></td>
+<td><input type="number" name="PR0C2" min="0" max="10" class="cell" id="PR0C2"></td>
+<td><input type="number" name="PR0C3" min="0" max="10" class="cell" id="PR0C3"></td>
+<td><input type="number" name="PR0C4" min="0" max="10" class="cell" id="PR0C4"></td>
+<td><input type="number" name="PR0C5" min="0" max="10" class="cell" id="PR0C5"></td>
+<td><input type="number" name="PR0C6" min="0" max="10" class="cell" id="PR0C6"></td>
+<td><input type="number" name="PR0C7" min="0" max="10" class="cell" id="PR0C7"></td>
+<td><input type="number" name="PR0C8" min="0" max="10" class="cell" id="PR0C8"></td>
+<td><input type="number" name="PR0C9" min="0" max="10" class="cell" id="PR0C9"></td>
+<td><input type="number" name="PR0C10" min="0" max="10" class="cell" id="PR0C10"></td>
+<td><input type="number" name="PR0C11" min="0" max="10" class="cell" id="PR0C11"></td>
+<td><input type="number" name="PR0C12" min="0" max="10" class="cell" id="PR0C12"></td>
+<td><input type="number" name="PR0C13" min="0" max="10" class="cell" id="PR0C13"></td>
+<td><input type="number" name="PR0C14" min="0" max="10" class="cell" id="PR0C14"></td>
+</tr>
+<tr><td>Effective and appropriate presentation</td>
+<td><input type="number" name="PR1C0" min="0" max="10" class="cell" id="PR1C0"></td>
+<td><input type="number" name="PR1C1" min="0" max="10" class="cell" id="PR1C1"></td>
+<td><input type="number" name="PR1C2" min="0" max="10" class="cell" id="PR1C2"></td>
+<td><input type="number" name="PR1C3" min="0" max="10" class="cell" id="PR1C3"></td>
+<td><input type="number" name="PR1C4" min="0" max="10" class="cell" id="PR1C4"></td>
+<td><input type="number" name="PR1C5" min="0" max="10" class="cell" id="PR1C5"></td>
+<td><input type="number" name="PR1C6" min="0" max="10" class="cell" id="PR1C6"></td>
+<td><input type="number" name="PR1C7" min="0" max="10" class="cell" id="PR1C7"></td>
+<td><input type="number" name="PR1C8" min="0" max="10" class="cell" id="PR1C8"></td>
+<td><input type="number" name="PR1C9" min="0" max="10" class="cell" id="PR1C9"></td>
+<td><input type="number" name="PR1C10" min="0" max="10" class="cell" id="PR1C10"></td>
+<td><input type="number" name="PR1C11" min="0" max="10" class="cell" id="PR1C11"></td>
+<td><input type="number" name="PR1C12" min="0" max="10" class="cell" id="PR1C12"></td>
+<td><input type="number" name="PR1C13" min="0" max="10" class="cell" id="PR1C13"></td>
+<td><input type="number" name="PR1C14" min="0" max="10" class="cell" id="PR1C14"></td>
+</tr>
+<thead><th>Body of Speech</th></thead>
+<tr><td>Information complete & logically presented</td>
+<td><input type="number" name="PR2C0" min="0" max="10" class="cell" id="PR2C0"></td>
+<td><input type="number" name="PR2C1" min="0" max="10" class="cell" id="PR2C1"></td>
+<td><input type="number" name="PR2C2" min="0" max="10" class="cell" id="PR2C2"></td>
+<td><input type="number" name="PR2C3" min="0" max="10" class="cell" id="PR2C3"></td>
+<td><input type="number" name="PR2C4" min="0" max="10" class="cell" id="PR2C4"></td>
+<td><input type="number" name="PR2C5" min="0" max="10" class="cell" id="PR2C5"></td>
+<td><input type="number" name="PR2C6" min="0" max="10" class="cell" id="PR2C6"></td>
+<td><input type="number" name="PR2C7" min="0" max="10" class="cell" id="PR2C7"></td>
+<td><input type="number" name="PR2C8" min="0" max="10" class="cell" id="PR2C8"></td>
+<td><input type="number" name="PR2C9" min="0" max="10" class="cell" id="PR2C9"></td>
+<td><input type="number" name="PR2C10" min="0" max="10" class="cell" id="PR2C10"></td>
+<td><input type="number" name="PR2C11" min="0" max="10" class="cell" id="PR2C11"></td>
+<td><input type="number" name="PR2C12" min="0" max="10" class="cell" id="PR2C12"></td>
+<td><input type="number" name="PR2C13" min="0" max="10" class="cell" id="PR2C13"></td>
+<td><input type="number" name="PR2C14" min="0" max="10" class="cell" id="PR2C14"></td>
+</tr>
+<tr><td>Knowledgeable about the subject</td>
+<td><input type="number" name="PR3C0" min="0" max="10" class="cell" id="PR3C0"></td>
+<td><input type="number" name="PR3C1" min="0" max="10" class="cell" id="PR3C1"></td>
+<td><input type="number" name="PR3C2" min="0" max="10" class="cell" id="PR3C2"></td>
+<td><input type="number" name="PR3C3" min="0" max="10" class="cell" id="PR3C3"></td>
+<td><input type="number" name="PR3C4" min="0" max="10" class="cell" id="PR3C4"></td>
+<td><input type="number" name="PR3C5" min="0" max="10" class="cell" id="PR3C5"></td>
+<td><input type="number" name="PR3C6" min="0" max="10" class="cell" id="PR3C6"></td>
+<td><input type="number" name="PR3C7" min="0" max="10" class="cell" id="PR3C7"></td>
+<td><input type="number" name="PR3C8" min="0" max="10" class="cell" id="PR3C8"></td>
+<td><input type="number" name="PR3C9" min="0" max="10" class="cell" id="PR3C9"></td>
+<td><input type="number" name="PR3C10" min="0" max="10" class="cell" id="PR3C10"></td>
+<td><input type="number" name="PR3C11" min="0" max="10" class="cell" id="PR3C11"></td>
+<td><input type="number" name="PR3C12" min="0" max="10" class="cell" id="PR3C12"></td>
+<td><input type="number" name="PR3C13" min="0" max="10" class="cell" id="PR3C13"></td>
+<td><input type="number" name="PR3C14" min="0" max="10" class="cell" id="PR3C14"></td>
+</tr>
+<tr><td>Speech developed with originality</td>
+<td><input type="number" name="PR4C0" min="0" max="10" class="cell" id="PR4C0"></td>
+<td><input type="number" name="PR4C1" min="0" max="10" class="cell" id="PR4C1"></td>
+<td><input type="number" name="PR4C2" min="0" max="10" class="cell" id="PR4C2"></td>
+<td><input type="number" name="PR4C3" min="0" max="10" class="cell" id="PR4C3"></td>
+<td><input type="number" name="PR4C4" min="0" max="10" class="cell" id="PR4C4"></td>
+<td><input type="number" name="PR4C5" min="0" max="10" class="cell" id="PR4C5"></td>
+<td><input type="number" name="PR4C6" min="0" max="10" class="cell" id="PR4C6"></td>
+<td><input type="number" name="PR4C7" min="0" max="10" class="cell" id="PR4C7"></td>
+<td><input type="number" name="PR4C8" min="0" max="10" class="cell" id="PR4C8"></td>
+<td><input type="number" name="PR4C9" min="0" max="10" class="cell" id="PR4C9"></td>
+<td><input type="number" name="PR4C10" min="0" max="10" class="cell" id="PR4C10"></td>
+<td><input type="number" name="PR4C11" min="0" max="10" class="cell" id="PR4C11"></td>
+<td><input type="number" name="PR4C12" min="0" max="10" class="cell" id="PR4C12"></td>
+<td><input type="number" name="PR4C13" min="0" max="10" class="cell" id="PR4C13"></td>
+<td><input type="number" name="PR4C14" min="0" max="10" class="cell" id="PR4C14"></td>
+</tr>
+<tr><td>Proper and effective use of language</td>
+<td><input type="number" name="PR5C0" min="0" max="10" class="cell" id="PR5C0"></td>
+<td><input type="number" name="PR5C1" min="0" max="10" class="cell" id="PR5C1"></td>
+<td><input type="number" name="PR5C2" min="0" max="10" class="cell" id="PR5C2"></td>
+<td><input type="number" name="PR5C3" min="0" max="10" class="cell" id="PR5C3"></td>
+<td><input type="number" name="PR5C4" min="0" max="10" class="cell" id="PR5C4"></td>
+<td><input type="number" name="PR5C5" min="0" max="10" class="cell" id="PR5C5"></td>
+<td><input type="number" name="PR5C6" min="0" max="10" class="cell" id="PR5C6"></td>
+<td><input type="number" name="PR5C7" min="0" max="10" class="cell" id="PR5C7"></td>
+<td><input type="number" name="PR5C8" min="0" max="10" class="cell" id="PR5C8"></td>
+<td><input type="number" name="PR5C9" min="0" max="10" class="cell" id="PR5C9"></td>
+<td><input type="number" name="PR5C10" min="0" max="10" class="cell" id="PR5C10"></td>
+<td><input type="number" name="PR5C11" min="0" max="10" class="cell" id="PR5C11"></td>
+<td><input type="number" name="PR5C12" min="0" max="10" class="cell" id="PR5C12"></td>
+<td><input type="number" name="PR5C13" min="0" max="10" class="cell" id="PR5C13"></td>
+<td><input type="number" name="PR5C14" min="0" max="10" class="cell" id="PR5C14"></td>
+</tr>
+<tr><td>Kept to topic</td>
+<td><input type="number" name="PR6C0" min="0" max="10" class="cell" id="PR6C0"></td>
+<td><input type="number" name="PR6C1" min="0" max="10" class="cell" id="PR6C1"></td>
+<td><input type="number" name="PR6C2" min="0" max="10" class="cell" id="PR6C2"></td>
+<td><input type="number" name="PR6C3" min="0" max="10" class="cell" id="PR6C3"></td>
+<td><input type="number" name="PR6C4" min="0" max="10" class="cell" id="PR6C4"></td>
+<td><input type="number" name="PR6C5" min="0" max="10" class="cell" id="PR6C5"></td>
+<td><input type="number" name="PR6C6" min="0" max="10" class="cell" id="PR6C6"></td>
+<td><input type="number" name="PR6C7" min="0" max="10" class="cell" id="PR6C7"></td>
+<td><input type="number" name="PR6C8" min="0" max="10" class="cell" id="PR6C8"></td>
+<td><input type="number" name="PR6C9" min="0" max="10" class="cell" id="PR6C9"></td>
+<td><input type="number" name="PR6C10" min="0" max="10" class="cell" id="PR6C10"></td>
+<td><input type="number" name="PR6C11" min="0" max="10" class="cell" id="PR6C11"></td>
+<td><input type="number" name="PR6C12" min="0" max="10" class="cell" id="PR6C12"></td>
+<td><input type="number" name="PR6C13" min="0" max="10" class="cell" id="PR6C13"></td>
+<td><input type="number" name="PR6C14" min="0" max="10" class="cell" id="PR6C14"></td>
+</tr>
+<tr><td>Correct grammar</td>
+<td><input type="number" name="PR7C0" min="0" max="10" class="cell" id="PR7C0"></td>
+<td><input type="number" name="PR7C1" min="0" max="10" class="cell" id="PR7C1"></td>
+<td><input type="number" name="PR7C2" min="0" max="10" class="cell" id="PR7C2"></td>
+<td><input type="number" name="PR7C3" min="0" max="10" class="cell" id="PR7C3"></td>
+<td><input type="number" name="PR7C4" min="0" max="10" class="cell" id="PR7C4"></td>
+<td><input type="number" name="PR7C5" min="0" max="10" class="cell" id="PR7C5"></td>
+<td><input type="number" name="PR7C6" min="0" max="10" class="cell" id="PR7C6"></td>
+<td><input type="number" name="PR7C7" min="0" max="10" class="cell" id="PR7C7"></td>
+<td><input type="number" name="PR7C8" min="0" max="10" class="cell" id="PR7C8"></td>
+<td><input type="number" name="PR7C9" min="0" max="10" class="cell" id="PR7C9"></td>
+<td><input type="number" name="PR7C10" min="0" max="10" class="cell" id="PR7C10"></td>
+<td><input type="number" name="PR7C11" min="0" max="10" class="cell" id="PR7C11"></td>
+<td><input type="number" name="PR7C12" min="0" max="10" class="cell" id="PR7C12"></td>
+<td><input type="number" name="PR7C13" min="0" max="10" class="cell" id="PR7C13"></td>
+<td><input type="number" name="PR7C14" min="0" max="10" class="cell" id="PR7C14"></td>
+</tr>
+<thead><th>Conclusion</th></thead>
+<tr><td>Left audience with an appreciation of topic</td>
+<td><input type="number" name="PR8C0" min="0" max="10" class="cell" id="PR8C0"></td>
+<td><input type="number" name="PR8C1" min="0" max="10" class="cell" id="PR8C1"></td>
+<td><input type="number" name="PR8C2" min="0" max="10" class="cell" id="PR8C2"></td>
+<td><input type="number" name="PR8C3" min="0" max="10" class="cell" id="PR8C3"></td>
+<td><input type="number" name="PR8C4" min="0" max="10" class="cell" id="PR8C4"></td>
+<td><input type="number" name="PR8C5" min="0" max="10" class="cell" id="PR8C5"></td>
+<td><input type="number" name="PR8C6" min="0" max="10" class="cell" id="PR8C6"></td>
+<td><input type="number" name="PR8C7" min="0" max="10" class="cell" id="PR8C7"></td>
+<td><input type="number" name="PR8C8" min="0" max="10" class="cell" id="PR8C8"></td>
+<td><input type="number" name="PR8C9" min="0" max="10" class="cell" id="PR8C9"></td>
+<td><input type="number" name="PR8C10" min="0" max="10" class="cell" id="PR8C10"></td>
+<td><input type="number" name="PR8C11" min="0" max="10" class="cell" id="PR8C11"></td>
+<td><input type="number" name="PR8C12" min="0" max="10" class="cell" id="PR8C12"></td>
+<td><input type="number" name="PR8C13" min="0" max="10" class="cell" id="PR8C13"></td>
+<td><input type="number" name="PR8C14" min="0" max="10" class="cell" id="PR8C14"></td>
+</tr>
+<tr><td>Sums up material</td>
+<td><input type="number" name="PR9C0" min="0" max="10" class="cell" id="PR9C0"></td>
+<td><input type="number" name="PR9C1" min="0" max="10" class="cell" id="PR9C1"></td>
+<td><input type="number" name="PR9C2" min="0" max="10" class="cell" id="PR9C2"></td>
+<td><input type="number" name="PR9C3" min="0" max="10" class="cell" id="PR9C3"></td>
+<td><input type="number" name="PR9C4" min="0" max="10" class="cell" id="PR9C4"></td>
+<td><input type="number" name="PR9C5" min="0" max="10" class="cell" id="PR9C5"></td>
+<td><input type="number" name="PR9C6" min="0" max="10" class="cell" id="PR9C6"></td>
+<td><input type="number" name="PR9C7" min="0" max="10" class="cell" id="PR9C7"></td>
+<td><input type="number" name="PR9C8" min="0" max="10" class="cell" id="PR9C8"></td>
+<td><input type="number" name="PR9C9" min="0" max="10" class="cell" id="PR9C9"></td>
+<td><input type="number" name="PR9C10" min="0" max="10" class="cell" id="PR9C10"></td>
+<td><input type="number" name="PR9C11" min="0" max="10" class="cell" id="PR9C11"></td>
+<td><input type="number" name="PR9C12" min="0" max="10" class="cell" id="PR9C12"></td>
+<td><input type="number" name="PR9C13" min="0" max="10" class="cell" id="PR9C13"></td>
+<td><input type="number" name="PR9C14" min="0" max="10" class="cell" id="PR9C14"></td>
+</tr>
+<tr><td>Logical: a capsule of what has been said</td>
+<td><input type="number" name="PR10C0" min="0" max="10" class="cell" id="PR10C0"></td>
+<td><input type="number" name="PR10C1" min="0" max="10" class="cell" id="PR10C1"></td>
+<td><input type="number" name="PR10C2" min="0" max="10" class="cell" id="PR10C2"></td>
+<td><input type="number" name="PR10C3" min="0" max="10" class="cell" id="PR10C3"></td>
+<td><input type="number" name="PR10C4" min="0" max="10" class="cell" id="PR10C4"></td>
+<td><input type="number" name="PR10C5" min="0" max="10" class="cell" id="PR10C5"></td>
+<td><input type="number" name="PR10C6" min="0" max="10" class="cell" id="PR10C6"></td>
+<td><input type="number" name="PR10C7" min="0" max="10" class="cell" id="PR10C7"></td>
+<td><input type="number" name="PR10C8" min="0" max="10" class="cell" id="PR10C8"></td>
+<td><input type="number" name="PR10C9" min="0" max="10" class="cell" id="PR10C9"></td>
+<td><input type="number" name="PR10C10" min="0" max="10" class="cell" id="PR10C10"></td>
+<td><input type="number" name="PR10C11" min="0" max="10" class="cell" id="PR10C11"></td>
+<td><input type="number" name="PR10C12" min="0" max="10" class="cell" id="PR10C12"></td>
+<td><input type="number" name="PR10C13" min="0" max="10" class="cell" id="PR10C13"></td>
+<td><input type="number" name="PR10C14" min="0" max="10" class="cell" id="PR10C14"></td>
+</tr>
+<thead><th>Delivery and Style</th></thead>
+<tr><td>Spoke to audience with enthusiasm, confidence and eye contact</td>
+<td><input type="number" name="PR11C0" min="0" max="10" class="cell" id="PR11C0"></td>
+<td><input type="number" name="PR11C1" min="0" max="10" class="cell" id="PR11C1"></td>
+<td><input type="number" name="PR11C2" min="0" max="10" class="cell" id="PR11C2"></td>
+<td><input type="number" name="PR11C3" min="0" max="10" class="cell" id="PR11C3"></td>
+<td><input type="number" name="PR11C4" min="0" max="10" class="cell" id="PR11C4"></td>
+<td><input type="number" name="PR11C5" min="0" max="10" class="cell" id="PR11C5"></td>
+<td><input type="number" name="PR11C6" min="0" max="10" class="cell" id="PR11C6"></td>
+<td><input type="number" name="PR11C7" min="0" max="10" class="cell" id="PR11C7"></td>
+<td><input type="number" name="PR11C8" min="0" max="10" class="cell" id="PR11C8"></td>
+<td><input type="number" name="PR11C9" min="0" max="10" class="cell" id="PR11C9"></td>
+<td><input type="number" name="PR11C10" min="0" max="10" class="cell" id="PR11C10"></td>
+<td><input type="number" name="PR11C11" min="0" max="10" class="cell" id="PR11C11"></td>
+<td><input type="number" name="PR11C12" min="0" max="10" class="cell" id="PR11C12"></td>
+<td><input type="number" name="PR11C13" min="0" max="10" class="cell" id="PR11C13"></td>
+<td><input type="number" name="PR11C14" min="0" max="10" class="cell" id="PR11C14"></td>
+</tr>
+<tr><td>Rate of delivery</td>
+<td><input type="number" name="PR12C0" min="0" max="10" class="cell" id="PR12C0"></td>
+<td><input type="number" name="PR12C1" min="0" max="10" class="cell" id="PR12C1"></td>
+<td><input type="number" name="PR12C2" min="0" max="10" class="cell" id="PR12C2"></td>
+<td><input type="number" name="PR12C3" min="0" max="10" class="cell" id="PR12C3"></td>
+<td><input type="number" name="PR12C4" min="0" max="10" class="cell" id="PR12C4"></td>
+<td><input type="number" name="PR12C5" min="0" max="10" class="cell" id="PR12C5"></td>
+<td><input type="number" name="PR12C6" min="0" max="10" class="cell" id="PR12C6"></td>
+<td><input type="number" name="PR12C7" min="0" max="10" class="cell" id="PR12C7"></td>
+<td><input type="number" name="PR12C8" min="0" max="10" class="cell" id="PR12C8"></td>
+<td><input type="number" name="PR12C9" min="0" max="10" class="cell" id="PR12C9"></td>
+<td><input type="number" name="PR12C10" min="0" max="10" class="cell" id="PR12C10"></td>
+<td><input type="number" name="PR12C11" min="0" max="10" class="cell" id="PR12C11"></td>
+<td><input type="number" name="PR12C12" min="0" max="10" class="cell" id="PR12C12"></td>
+<td><input type="number" name="PR12C13" min="0" max="10" class="cell" id="PR12C13"></td>
+<td><input type="number" name="PR12C14" min="0" max="10" class="cell" id="PR12C14"></td>
+</tr>
+<tr><td>Proper stance, audible, correct pronunciation & enunciation</td>
+<td><input type="number" name="PR13C0" min="0" max="10" class="cell" id="PR13C0"></td>
+<td><input type="number" name="PR13C1" min="0" max="10" class="cell" id="PR13C1"></td>
+<td><input type="number" name="PR13C2" min="0" max="10" class="cell" id="PR13C2"></td>
+<td><input type="number" name="PR13C3" min="0" max="10" class="cell" id="PR13C3"></td>
+<td><input type="number" name="PR13C4" min="0" max="10" class="cell" id="PR13C4"></td>
+<td><input type="number" name="PR13C5" min="0" max="10" class="cell" id="PR13C5"></td>
+<td><input type="number" name="PR13C6" min="0" max="10" class="cell" id="PR13C6"></td>
+<td><input type="number" name="PR13C7" min="0" max="10" class="cell" id="PR13C7"></td>
+<td><input type="number" name="PR13C8" min="0" max="10" class="cell" id="PR13C8"></td>
+<td><input type="number" name="PR13C9" min="0" max="10" class="cell" id="PR13C9"></td>
+<td><input type="number" name="PR13C10" min="0" max="10" class="cell" id="PR13C10"></td>
+<td><input type="number" name="PR13C11" min="0" max="10" class="cell" id="PR13C11"></td>
+<td><input type="number" name="PR13C12" min="0" max="10" class="cell" id="PR13C12"></td>
+<td><input type="number" name="PR13C13" min="0" max="10" class="cell" id="PR13C13"></td>
+<td><input type="number" name="PR13C14" min="0" max="10" class="cell" id="PR13C14"></td>
+</tr>
+</table>
+<br/>
+
+
+<table id="impromptu">
+<caption>Impromptu Speech</caption>
+<thead><th>Introduction</th></thead>
+<tr><td>Aroused interest</td>
+<td><input type="number" name="IR0C0" min="0" max="10" class="cell" id="IR0C0"></td>
+<td><input type="number" name="IR0C1" min="0" max="10" class="cell" id="IR0C1"></td>
+<td><input type="number" name="IR0C2" min="0" max="10" class="cell" id="IR0C2"></td>
+<td><input type="number" name="IR0C3" min="0" max="10" class="cell" id="IR0C3"></td>
+<td><input type="number" name="IR0C4" min="0" max="10" class="cell" id="IR0C4"></td>
+<td><input type="number" name="IR0C5" min="0" max="10" class="cell" id="IR0C5"></td>
+<td><input type="number" name="IR0C6" min="0" max="10" class="cell" id="IR0C6"></td>
+<td><input type="number" name="IR0C7" min="0" max="10" class="cell" id="IR0C7"></td>
+<td><input type="number" name="IR0C8" min="0" max="10" class="cell" id="IR0C8"></td>
+<td><input type="number" name="IR0C9" min="0" max="10" class="cell" id="IR0C9"></td>
+<td><input type="number" name="IR0C10" min="0" max="10" class="cell" id="IR0C10"></td>
+<td><input type="number" name="IR0C11" min="0" max="10" class="cell" id="IR0C11"></td>
+<td><input type="number" name="IR0C12" min="0" max="10" class="cell" id="IR0C12"></td>
+<td><input type="number" name="IR0C13" min="0" max="10" class="cell" id="IR0C13"></td>
+<td><input type="number" name="IR0C14" min="0" max="10" class="cell" id="IR0C14"></td>
+</tr>
+<tr><td>Effective and appropriate presentation</td>
+<td><input type="number" name="IR1C0" min="0" max="10" class="cell" id="IR1C0"></td>
+<td><input type="number" name="IR1C1" min="0" max="10" class="cell" id="IR1C1"></td>
+<td><input type="number" name="IR1C2" min="0" max="10" class="cell" id="IR1C2"></td>
+<td><input type="number" name="IR1C3" min="0" max="10" class="cell" id="IR1C3"></td>
+<td><input type="number" name="IR1C4" min="0" max="10" class="cell" id="IR1C4"></td>
+<td><input type="number" name="IR1C5" min="0" max="10" class="cell" id="IR1C5"></td>
+<td><input type="number" name="IR1C6" min="0" max="10" class="cell" id="IR1C6"></td>
+<td><input type="number" name="IR1C7" min="0" max="10" class="cell" id="IR1C7"></td>
+<td><input type="number" name="IR1C8" min="0" max="10" class="cell" id="IR1C8"></td>
+<td><input type="number" name="IR1C9" min="0" max="10" class="cell" id="IR1C9"></td>
+<td><input type="number" name="IR1C10" min="0" max="10" class="cell" id="IR1C10"></td>
+<td><input type="number" name="IR1C11" min="0" max="10" class="cell" id="IR1C11"></td>
+<td><input type="number" name="IR1C12" min="0" max="10" class="cell" id="IR1C12"></td>
+<td><input type="number" name="IR1C13" min="0" max="10" class="cell" id="IR1C13"></td>
+<td><input type="number" name="IR1C14" min="0" max="10" class="cell" id="IR1C14"></td>
+</tr>
+<thead><th>Body of Speech</th></thead>
+<tr><td>Information complete & logically presented</td>
+<td><input type="number" name="IR2C0" min="0" max="10" class="cell" id="IR2C0"></td>
+<td><input type="number" name="IR2C1" min="0" max="10" class="cell" id="IR2C1"></td>
+<td><input type="number" name="IR2C2" min="0" max="10" class="cell" id="IR2C2"></td>
+<td><input type="number" name="IR2C3" min="0" max="10" class="cell" id="IR2C3"></td>
+<td><input type="number" name="IR2C4" min="0" max="10" class="cell" id="IR2C4"></td>
+<td><input type="number" name="IR2C5" min="0" max="10" class="cell" id="IR2C5"></td>
+<td><input type="number" name="IR2C6" min="0" max="10" class="cell" id="IR2C6"></td>
+<td><input type="number" name="IR2C7" min="0" max="10" class="cell" id="IR2C7"></td>
+<td><input type="number" name="IR2C8" min="0" max="10" class="cell" id="IR2C8"></td>
+<td><input type="number" name="IR2C9" min="0" max="10" class="cell" id="IR2C9"></td>
+<td><input type="number" name="IR2C10" min="0" max="10" class="cell" id="IR2C10"></td>
+<td><input type="number" name="IR2C11" min="0" max="10" class="cell" id="IR2C11"></td>
+<td><input type="number" name="IR2C12" min="0" max="10" class="cell" id="IR2C12"></td>
+<td><input type="number" name="IR2C13" min="0" max="10" class="cell" id="IR2C13"></td>
+<td><input type="number" name="IR2C14" min="0" max="10" class="cell" id="IR2C14"></td>
+</tr>
+<tr><td>Knowledgeable about the subject</td>
+<td><input type="number" name="IR3C0" min="0" max="10" class="cell" id="IR3C0"></td>
+<td><input type="number" name="IR3C1" min="0" max="10" class="cell" id="IR3C1"></td>
+<td><input type="number" name="IR3C2" min="0" max="10" class="cell" id="IR3C2"></td>
+<td><input type="number" name="IR3C3" min="0" max="10" class="cell" id="IR3C3"></td>
+<td><input type="number" name="IR3C4" min="0" max="10" class="cell" id="IR3C4"></td>
+<td><input type="number" name="IR3C5" min="0" max="10" class="cell" id="IR3C5"></td>
+<td><input type="number" name="IR3C6" min="0" max="10" class="cell" id="IR3C6"></td>
+<td><input type="number" name="IR3C7" min="0" max="10" class="cell" id="IR3C7"></td>
+<td><input type="number" name="IR3C8" min="0" max="10" class="cell" id="IR3C8"></td>
+<td><input type="number" name="IR3C9" min="0" max="10" class="cell" id="IR3C9"></td>
+<td><input type="number" name="IR3C10" min="0" max="10" class="cell" id="IR3C10"></td>
+<td><input type="number" name="IR3C11" min="0" max="10" class="cell" id="IR3C11"></td>
+<td><input type="number" name="IR3C12" min="0" max="10" class="cell" id="IR3C12"></td>
+<td><input type="number" name="IR3C13" min="0" max="10" class="cell" id="IR3C13"></td>
+<td><input type="number" name="IR3C14" min="0" max="10" class="cell" id="IR3C14"></td>
+</tr>
+<tr><td>Speech developed with originality</td>
+<td><input type="number" name="IR4C0" min="0" max="10" class="cell" id="IR4C0"></td>
+<td><input type="number" name="IR4C1" min="0" max="10" class="cell" id="IR4C1"></td>
+<td><input type="number" name="IR4C2" min="0" max="10" class="cell" id="IR4C2"></td>
+<td><input type="number" name="IR4C3" min="0" max="10" class="cell" id="IR4C3"></td>
+<td><input type="number" name="IR4C4" min="0" max="10" class="cell" id="IR4C4"></td>
+<td><input type="number" name="IR4C5" min="0" max="10" class="cell" id="IR4C5"></td>
+<td><input type="number" name="IR4C6" min="0" max="10" class="cell" id="IR4C6"></td>
+<td><input type="number" name="IR4C7" min="0" max="10" class="cell" id="IR4C7"></td>
+<td><input type="number" name="IR4C8" min="0" max="10" class="cell" id="IR4C8"></td>
+<td><input type="number" name="IR4C9" min="0" max="10" class="cell" id="IR4C9"></td>
+<td><input type="number" name="IR4C10" min="0" max="10" class="cell" id="IR4C10"></td>
+<td><input type="number" name="IR4C11" min="0" max="10" class="cell" id="IR4C11"></td>
+<td><input type="number" name="IR4C12" min="0" max="10" class="cell" id="IR4C12"></td>
+<td><input type="number" name="IR4C13" min="0" max="10" class="cell" id="IR4C13"></td>
+<td><input type="number" name="IR4C14" min="0" max="10" class="cell" id="IR4C14"></td>
+</tr>
+<tr><td>Proper and effective use of language</td>
+<td><input type="number" name="IR5C0" min="0" max="10" class="cell" id="IR5C0"></td>
+<td><input type="number" name="IR5C1" min="0" max="10" class="cell" id="IR5C1"></td>
+<td><input type="number" name="IR5C2" min="0" max="10" class="cell" id="IR5C2"></td>
+<td><input type="number" name="IR5C3" min="0" max="10" class="cell" id="IR5C3"></td>
+<td><input type="number" name="IR5C4" min="0" max="10" class="cell" id="IR5C4"></td>
+<td><input type="number" name="IR5C5" min="0" max="10" class="cell" id="IR5C5"></td>
+<td><input type="number" name="IR5C6" min="0" max="10" class="cell" id="IR5C6"></td>
+<td><input type="number" name="IR5C7" min="0" max="10" class="cell" id="IR5C7"></td>
+<td><input type="number" name="IR5C8" min="0" max="10" class="cell" id="IR5C8"></td>
+<td><input type="number" name="IR5C9" min="0" max="10" class="cell" id="IR5C9"></td>
+<td><input type="number" name="IR5C10" min="0" max="10" class="cell" id="IR5C10"></td>
+<td><input type="number" name="IR5C11" min="0" max="10" class="cell" id="IR5C11"></td>
+<td><input type="number" name="IR5C12" min="0" max="10" class="cell" id="IR5C12"></td>
+<td><input type="number" name="IR5C13" min="0" max="10" class="cell" id="IR5C13"></td>
+<td><input type="number" name="IR5C14" min="0" max="10" class="cell" id="IR5C14"></td>
+</tr>
+<tr><td>Kept to topic</td>
+<td><input type="number" name="IR6C0" min="0" max="10" class="cell" id="IR6C0"></td>
+<td><input type="number" name="IR6C1" min="0" max="10" class="cell" id="IR6C1"></td>
+<td><input type="number" name="IR6C2" min="0" max="10" class="cell" id="IR6C2"></td>
+<td><input type="number" name="IR6C3" min="0" max="10" class="cell" id="IR6C3"></td>
+<td><input type="number" name="IR6C4" min="0" max="10" class="cell" id="IR6C4"></td>
+<td><input type="number" name="IR6C5" min="0" max="10" class="cell" id="IR6C5"></td>
+<td><input type="number" name="IR6C6" min="0" max="10" class="cell" id="IR6C6"></td>
+<td><input type="number" name="IR6C7" min="0" max="10" class="cell" id="IR6C7"></td>
+<td><input type="number" name="IR6C8" min="0" max="10" class="cell" id="IR6C8"></td>
+<td><input type="number" name="IR6C9" min="0" max="10" class="cell" id="IR6C9"></td>
+<td><input type="number" name="IR6C10" min="0" max="10" class="cell" id="IR6C10"></td>
+<td><input type="number" name="IR6C11" min="0" max="10" class="cell" id="IR6C11"></td>
+<td><input type="number" name="IR6C12" min="0" max="10" class="cell" id="IR6C12"></td>
+<td><input type="number" name="IR6C13" min="0" max="10" class="cell" id="IR6C13"></td>
+<td><input type="number" name="IR6C14" min="0" max="10" class="cell" id="IR6C14"></td>
+</tr>
+<tr><td>Correct grammar</td>
+<td><input type="number" name="IR7C0" min="0" max="10" class="cell" id="IR7C0"></td>
+<td><input type="number" name="IR7C1" min="0" max="10" class="cell" id="IR7C1"></td>
+<td><input type="number" name="IR7C2" min="0" max="10" class="cell" id="IR7C2"></td>
+<td><input type="number" name="IR7C3" min="0" max="10" class="cell" id="IR7C3"></td>
+<td><input type="number" name="IR7C4" min="0" max="10" class="cell" id="IR7C4"></td>
+<td><input type="number" name="IR7C5" min="0" max="10" class="cell" id="IR7C5"></td>
+<td><input type="number" name="IR7C6" min="0" max="10" class="cell" id="IR7C6"></td>
+<td><input type="number" name="IR7C7" min="0" max="10" class="cell" id="IR7C7"></td>
+<td><input type="number" name="IR7C8" min="0" max="10" class="cell" id="IR7C8"></td>
+<td><input type="number" name="IR7C9" min="0" max="10" class="cell" id="IR7C9"></td>
+<td><input type="number" name="IR7C10" min="0" max="10" class="cell" id="IR7C10"></td>
+<td><input type="number" name="IR7C11" min="0" max="10" class="cell" id="IR7C11"></td>
+<td><input type="number" name="IR7C12" min="0" max="10" class="cell" id="IR7C12"></td>
+<td><input type="number" name="IR7C13" min="0" max="10" class="cell" id="IR7C13"></td>
+<td><input type="number" name="IR7C14" min="0" max="10" class="cell" id="IR7C14"></td>
+</tr>
+<thead><th>Conclusion</th></thead>
+<tr><td>Left audience with an appreciation of topic</td>
+<td><input type="number" name="IR8C0" min="0" max="10" class="cell" id="IR8C0"></td>
+<td><input type="number" name="IR8C1" min="0" max="10" class="cell" id="IR8C1"></td>
+<td><input type="number" name="IR8C2" min="0" max="10" class="cell" id="IR8C2"></td>
+<td><input type="number" name="IR8C3" min="0" max="10" class="cell" id="IR8C3"></td>
+<td><input type="number" name="IR8C4" min="0" max="10" class="cell" id="IR8C4"></td>
+<td><input type="number" name="IR8C5" min="0" max="10" class="cell" id="IR8C5"></td>
+<td><input type="number" name="IR8C6" min="0" max="10" class="cell" id="IR8C6"></td>
+<td><input type="number" name="IR8C7" min="0" max="10" class="cell" id="IR8C7"></td>
+<td><input type="number" name="IR8C8" min="0" max="10" class="cell" id="IR8C8"></td>
+<td><input type="number" name="IR8C9" min="0" max="10" class="cell" id="IR8C9"></td>
+<td><input type="number" name="IR8C10" min="0" max="10" class="cell" id="IR8C10"></td>
+<td><input type="number" name="IR8C11" min="0" max="10" class="cell" id="IR8C11"></td>
+<td><input type="number" name="IR8C12" min="0" max="10" class="cell" id="IR8C12"></td>
+<td><input type="number" name="IR8C13" min="0" max="10" class="cell" id="IR8C13"></td>
+<td><input type="number" name="IR8C14" min="0" max="10" class="cell" id="IR8C14"></td>
+</tr>
+<tr><td>Sums up material</td>
+<td><input type="number" name="IR9C0" min="0" max="10" class="cell" id="IR9C0"></td>
+<td><input type="number" name="IR9C1" min="0" max="10" class="cell" id="IR9C1"></td>
+<td><input type="number" name="IR9C2" min="0" max="10" class="cell" id="IR9C2"></td>
+<td><input type="number" name="IR9C3" min="0" max="10" class="cell" id="IR9C3"></td>
+<td><input type="number" name="IR9C4" min="0" max="10" class="cell" id="IR9C4"></td>
+<td><input type="number" name="IR9C5" min="0" max="10" class="cell" id="IR9C5"></td>
+<td><input type="number" name="IR9C6" min="0" max="10" class="cell" id="IR9C6"></td>
+<td><input type="number" name="IR9C7" min="0" max="10" class="cell" id="IR9C7"></td>
+<td><input type="number" name="IR9C8" min="0" max="10" class="cell" id="IR9C8"></td>
+<td><input type="number" name="IR9C9" min="0" max="10" class="cell" id="IR9C9"></td>
+<td><input type="number" name="IR9C10" min="0" max="10" class="cell" id="IR9C10"></td>
+<td><input type="number" name="IR9C11" min="0" max="10" class="cell" id="IR9C11"></td>
+<td><input type="number" name="IR9C12" min="0" max="10" class="cell" id="IR9C12"></td>
+<td><input type="number" name="IR9C13" min="0" max="10" class="cell" id="IR9C13"></td>
+<td><input type="number" name="IR9C14" min="0" max="10" class="cell" id="IR9C14"></td>
+</tr>
+<tr><td>Logical: a capsule of what has been said</td>
+<td><input type="number" name="IR10C0" min="0" max="10" class="cell" id="IR10C0"></td>
+<td><input type="number" name="IR10C1" min="0" max="10" class="cell" id="IR10C1"></td>
+<td><input type="number" name="IR10C2" min="0" max="10" class="cell" id="IR10C2"></td>
+<td><input type="number" name="IR10C3" min="0" max="10" class="cell" id="IR10C3"></td>
+<td><input type="number" name="IR10C4" min="0" max="10" class="cell" id="IR10C4"></td>
+<td><input type="number" name="IR10C5" min="0" max="10" class="cell" id="IR10C5"></td>
+<td><input type="number" name="IR10C6" min="0" max="10" class="cell" id="IR10C6"></td>
+<td><input type="number" name="IR10C7" min="0" max="10" class="cell" id="IR10C7"></td>
+<td><input type="number" name="IR10C8" min="0" max="10" class="cell" id="IR10C8"></td>
+<td><input type="number" name="IR10C9" min="0" max="10" class="cell" id="IR10C9"></td>
+<td><input type="number" name="IR10C10" min="0" max="10" class="cell" id="IR10C10"></td>
+<td><input type="number" name="IR10C11" min="0" max="10" class="cell" id="IR10C11"></td>
+<td><input type="number" name="IR10C12" min="0" max="10" class="cell" id="IR10C12"></td>
+<td><input type="number" name="IR10C13" min="0" max="10" class="cell" id="IR10C13"></td>
+<td><input type="number" name="IR10C14" min="0" max="10" class="cell" id="IR10C14"></td>
+</tr>
+<thead><th>Delivery and Style</th></thead>
+<tr><td>Spoke to audience with enthusiasm, confidence and eye contact</td>
+<td><input type="number" name="IR11C0" min="0" max="10" class="cell" id="IR11C0"></td>
+<td><input type="number" name="IR11C1" min="0" max="10" class="cell" id="IR11C1"></td>
+<td><input type="number" name="IR11C2" min="0" max="10" class="cell" id="IR11C2"></td>
+<td><input type="number" name="IR11C3" min="0" max="10" class="cell" id="IR11C3"></td>
+<td><input type="number" name="IR11C4" min="0" max="10" class="cell" id="IR11C4"></td>
+<td><input type="number" name="IR11C5" min="0" max="10" class="cell" id="IR11C5"></td>
+<td><input type="number" name="IR11C6" min="0" max="10" class="cell" id="IR11C6"></td>
+<td><input type="number" name="IR11C7" min="0" max="10" class="cell" id="IR11C7"></td>
+<td><input type="number" name="IR11C8" min="0" max="10" class="cell" id="IR11C8"></td>
+<td><input type="number" name="IR11C9" min="0" max="10" class="cell" id="IR11C9"></td>
+<td><input type="number" name="IR11C10" min="0" max="10" class="cell" id="IR11C10"></td>
+<td><input type="number" name="IR11C11" min="0" max="10" class="cell" id="IR11C11"></td>
+<td><input type="number" name="IR11C12" min="0" max="10" class="cell" id="IR11C12"></td>
+<td><input type="number" name="IR11C13" min="0" max="10" class="cell" id="IR11C13"></td>
+<td><input type="number" name="IR11C14" min="0" max="10" class="cell" id="IR11C14"></td>
+</tr>
+<tr><td>Rate of delivery</td>
+<td><input type="number" name="IR12C0" min="0" max="10" class="cell" id="IR12C0"></td>
+<td><input type="number" name="IR12C1" min="0" max="10" class="cell" id="IR12C1"></td>
+<td><input type="number" name="IR12C2" min="0" max="10" class="cell" id="IR12C2"></td>
+<td><input type="number" name="IR12C3" min="0" max="10" class="cell" id="IR12C3"></td>
+<td><input type="number" name="IR12C4" min="0" max="10" class="cell" id="IR12C4"></td>
+<td><input type="number" name="IR12C5" min="0" max="10" class="cell" id="IR12C5"></td>
+<td><input type="number" name="IR12C6" min="0" max="10" class="cell" id="IR12C6"></td>
+<td><input type="number" name="IR12C7" min="0" max="10" class="cell" id="IR12C7"></td>
+<td><input type="number" name="IR12C8" min="0" max="10" class="cell" id="IR12C8"></td>
+<td><input type="number" name="IR12C9" min="0" max="10" class="cell" id="IR12C9"></td>
+<td><input type="number" name="IR12C10" min="0" max="10" class="cell" id="IR12C10"></td>
+<td><input type="number" name="IR12C11" min="0" max="10" class="cell" id="IR12C11"></td>
+<td><input type="number" name="IR12C12" min="0" max="10" class="cell" id="IR12C12"></td>
+<td><input type="number" name="IR12C13" min="0" max="10" class="cell" id="IR12C13"></td>
+<td><input type="number" name="IR12C14" min="0" max="10" class="cell" id="IR12C14"></td>
+</tr>
+<tr><td>Proper stance, audible, correct pronunciation & enunciation</td>
+<td><input type="number" name="IR13C0" min="0" max="10" class="cell" id="IR13C0"></td>
+<td><input type="number" name="IR13C1" min="0" max="10" class="cell" id="IR13C1"></td>
+<td><input type="number" name="IR13C2" min="0" max="10" class="cell" id="IR13C2"></td>
+<td><input type="number" name="IR13C3" min="0" max="10" class="cell" id="IR13C3"></td>
+<td><input type="number" name="IR13C4" min="0" max="10" class="cell" id="IR13C4"></td>
+<td><input type="number" name="IR13C5" min="0" max="10" class="cell" id="IR13C5"></td>
+<td><input type="number" name="IR13C6" min="0" max="10" class="cell" id="IR13C6"></td>
+<td><input type="number" name="IR13C7" min="0" max="10" class="cell" id="IR13C7"></td>
+<td><input type="number" name="IR13C8" min="0" max="10" class="cell" id="IR13C8"></td>
+<td><input type="number" name="IR13C9" min="0" max="10" class="cell" id="IR13C9"></td>
+<td><input type="number" name="IR13C10" min="0" max="10" class="cell" id="IR13C10"></td>
+<td><input type="number" name="IR13C11" min="0" max="10" class="cell" id="IR13C11"></td>
+<td><input type="number" name="IR13C12" min="0" max="10" class="cell" id="IR13C12"></td>
+<td><input type="number" name="IR13C13" min="0" max="10" class="cell" id="IR13C13"></td>
+<td><input type="number" name="IR13C14" min="0" max="10" class="cell" id="IR13C14"></td>
+</tr>
+</table>
+<input type="submit"/>
+</form>
+</body>
+</html>
