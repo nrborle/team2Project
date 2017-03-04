@@ -37,26 +37,6 @@
 
   $_SESSION["participantList"] = $participantList;
 
-  header("Location: ../createScoringForm.php?form=p?judge=1");
+  header("Location: createScoringForm.php?form=p&judge=1");
 
-  /* For Testing Purposes
-  <html>
-  Participants:
-  <?php echo $participantList[0]; ?>
-  <?php echo $participantList[1]; ?>
-  <?php echo $participantList[2]; ?>
-  <?php echo $participantList[3]; ?>
-  <?php echo $participantList[4]; ?>
-  <?php echo $participantList[5]; ?>
-  <?php echo $participantList[6]; ?>
-  <?php echo $participantList[7]; ?>
-  <?php echo $participantList[8]; ?>
-  <?php echo $participantList[9]; ?>
-  <?php echo $participantList[10]; ?>
-  <?php echo $participantList[11]; ?>
-  <?php echo $participantList[12]; ?>
-  <?php echo $participantList[13]; ?>
-  <?php echo $participantList[14]; ?>
-  </html>
-  */
  ?>
