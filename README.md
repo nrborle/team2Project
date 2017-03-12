@@ -1,4 +1,4 @@
-# team2Project
-COSC 310 project. Winter 2017 term. Focusing on an online tool.
+Jumbo Shrimp
+COSC 310 Project
 
-The text on this line is a test.
+Calculation application for public speaking competition.
