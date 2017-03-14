@@ -8,7 +8,7 @@
   echo "<script>";
   echo include("../scripts/TJ-8.js");
 
-  if (strcmp($_POST["formName"],"TK1") {
+  if (strcmp($_POST["formName"],"TK1")) {
     $doneTK1 = 1;
     $TK1_Min_and_Sec = array();
     $TK1_List = array();

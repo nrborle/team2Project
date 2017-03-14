@@ -1,35 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-  table, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-  tr:hover{background-color:#f5f5f5}
-</style>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>TIMEKEEPER WORKSHEET</h1>
+<section id="timekeeper">
+<h1>Timekeeper Form</h1>
 <div style="overflow-x:auto;">
 <table style="width:750px">
   <tr>
     <th rowspan="3">Speaker</th>
     <th colspan="2">Prepared Speech</th>
     <th colspan="2">Impromtu speech table</th>
-    <th colspan="2">Total table</th>
-    <th rowspan="3">Comments</th>
   </tr>
   <tr>
     <th colspan="2">Duration</th>
     <th colspan="2">Duration</th>
-    <th colspan="2">Duration</th>
   </tr>
   <tr>
-    <th>min</th>
-    <th>sec</th>
     <th>min</th>
     <th>sec</th>
     <th>min</th>
@@ -43,11 +25,6 @@
 
       <td><input type="text" name="1_i_min" id="r1c3"></td>
       <td><input type="text" name="1_i_sec" id="r1c4"></td>
-
-      <td><input type="text" name="1_t_min" id="r1c5"></td>
-      <td><input type="text" name="1_t_sec" id="r1c6"></td>
-
-      <td><input type="text" name="1_comment" id="r1c7"></td>
     </tr>
     <tr>
       <td>2.</td>
@@ -56,11 +33,6 @@
 
       <td><input type="text" name="2_i_min" id="r2c3"></td>
       <td><input type="text" name="2_i_sec" id="r2c4"></td>
-
-      <td><input type="text" name="2_t_min" id="r2c5"></td>
-      <td><input type="text" name="2_t_sec" id="r2c6"></td>
-
-      <td><input type="text" name="2_comment" id="r2c7"></td>
     </tr>
     <tr>
       <td>3.</td>
@@ -69,11 +41,6 @@
 
       <td><input type="text" name="3_i_min" id="r3c3"></td>
       <td><input type="text" name="3_i_sec" id="r3c4"></td>
-
-      <td><input type="text" name="3_t_min" id="r3c5"></td>
-      <td><input type="text" name="3_t_sec" id="r3c6"></td>
-
-      <td><input type="text" name="3_comment" id="r3c7"></td>
     </tr>
     <tr>
       <td>4.</td>
@@ -82,11 +49,6 @@
 
       <td><input type="text" name="4_i_min" id="r4c3"></td>
       <td><input type="text" name="4_i_sec" id="r4c4"></td>
-
-      <td><input type="text" name="4_t_min" id="r4c5"></td>
-      <td><input type="text" name="4_t_sec" id="r4c6"></td>
-
-      <td><input type="text" name="4_comment" id="r4c7"></td>
     </tr>
     <tr>
       <td>5.</td>
@@ -95,11 +57,6 @@
 
       <td><input type="text" name="5_i_min" id="r5c3"></td>
       <td><input type="text" name="5_i_sec" id="r5c4"></td>
-
-      <td><input type="text" name="5_t_min" id="r5c5"></td>
-      <td><input type="text" name="5_t_sec" id="r5c6"></td>
-
-      <td><input type="text" name="5_comment" id="r5c7"></td>
     </tr>
     <tr>
       <td>6.</td>
@@ -108,11 +65,6 @@
 
       <td><input type="text" name="6_i_min" id="r6c3"></td>
       <td><input type="text" name="6_i_sec" id="r6c4"></td>
-
-      <td><input type="text" name="6_t_min" id="r6c5"></td>
-      <td><input type="text" name="6_t_sec" id="r6c6"></td>
-
-      <td><input type="text" name="6_comment" id="r6c7"></td>
     </tr>
     <tr>
       <td>1.</td>
@@ -121,11 +73,6 @@
 
       <td><input type="text" name="7_i_min" id="r7c3"></td>
       <td><input type="text" name="7_i_sec" id="r7c4"></td>
-
-      <td><input type="text" name="7_t_min" id="r7c5"></td>
-      <td><input type="text" name="7_t_sec" id="r7c6"></td>
-
-      <td><input type="text" name="7_comment" id="r7c7"></td>
     </tr>
     <tr>
       <td>1.</td>
@@ -134,11 +81,6 @@
 
       <td><input type="text" name="8_i_min" id="r8c3"></td>
       <td><input type="text" name="8_i_sec" id="r8c4"></td>
-
-      <td><input type="text" name="8_t_min" id="r8c5"></td>
-      <td><input type="text" name="8_t_sec" id="r8c6"></td>
-
-      <td><input type="text" name="8_comment" id="r8c7"></td>
     </tr>
     <tr>
       <td>9.</td>
@@ -147,11 +89,6 @@
 
       <td><input type="text" name="9_i_min" id="r9c3"></td>
       <td><input type="text" name="9_i_sec" id="r9c4"></td>
-
-      <td><input type="text" name="9_t_min" id="r9c5"></td>
-      <td><input type="text" name="9_t_sec" id="r9c6"></td>
-
-      <td><input type="text" name="9_comment" id="r9c7"></td>
     </tr>
     <tr>
       <td>10.</td>
@@ -160,11 +97,6 @@
 
       <td><input type="text" name="10_i_min" id="r10c3"></td>
       <td><input type="text" name="10_i_sec" id="r10c4"></td>
-
-      <td><input type="text" name="10_t_min" id="r10c5"></td>
-      <td><input type="text" name="10_t_sec" id="r10c6"></td>
-
-      <td><input type="text" name="10_comment" id="r10c7"></td>
     </tr>
     <tr>
       <td>11.</td>
@@ -173,11 +105,6 @@
 
       <td><input type="text" name="11_i_min" id="r11c3"></td>
       <td><input type="text" name="11_i_sec" id="r11c4"></td>
-
-      <td><input type="text" name="11_t_min" id="r11c5"></td>
-      <td><input type="text" name="11_t_sec" id="r11c6"></td>
-
-      <td><input type="text" name="11_comment" id="r11c7"></td>
     </tr>
     <tr>
       <td>12.</td>
@@ -186,11 +113,6 @@
 
       <td><input type="text" name="12_i_min" id="r12c3"></td>
       <td><input type="text" name="12_i_sec" id="r12c4"></td>
-
-      <td><input type="text" name="12_t_min" id="r12c5"></td>
-      <td><input type="text" name="12_t_sec" id="r12c6"></td>
-
-      <td><input type="text" name="12_comment" id="r12c7"></td>
     </tr>
     <tr>
       <td>13.</td>
@@ -199,11 +121,6 @@
 
       <td><input type="text" name="13_i_min" id="r13c3"></td>
       <td><input type="text" name="13_i_sec" id="r13c4"></td>
-
-      <td><input type="text" name="13_t_min" id="r13c5"></td>
-      <td><input type="text" name="13_t_sec" id="r13c6"></td>
-
-      <td><input type="text" name="13_comment" id="r13c7"></td>
     </tr>
     <tr>
       <td>14.</td>
@@ -212,11 +129,6 @@
 
       <td><input type="text" name="14_i_min" id="r14c3"></td>
       <td><input type="text" name="14_i_sec" id="r14c4"></td>
-
-      <td><input type="text" name="14_t_min" id="r14c5"></td>
-      <td><input type="text" name="14_t_sec" id="r14c6"></td>
-
-      <td><input type="text" name="14_comment" id="r14c7"></td>
     </tr>
     <tr>
       <td>15.</td>
@@ -225,11 +137,6 @@
 
       <td><input type="text" name="15_i_min" id="r15c3"></td>
       <td><input type="text" name="15_i_sec" id="r15c4"></td>
-
-      <td><input type="text" name="15_t_min" id="r15c5"></td>
-      <td><input type="text" name="15_t_sec" id="r15c6"></td>
-
-      <td><input type="text" name="15_comment" id="r15c7"></td>
     </tr>
     <tr>
       <td><input type="submit" value="Submit"></td>
@@ -237,5 +144,5 @@
   </form>
 </table>
 </div>
-</body>
-</html>
+</section>
+

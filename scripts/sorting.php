@@ -7,12 +7,12 @@
 <body>
 	<?php
 	// test data for now
-		$participantList = array("bob","jon","chris","steve","cole","matt");
+		//$participantList = array("bob","jon","chris","steve","cole","matt");
 		$score = array("13","42","33","24","1","43");
 
 	#will get real values from here
-		#$_SESSION["participantList"] = $participantList;
-		#$_SESSION["score"] = $score;
+		$_SESSION["participantList"] = $participantList;
+		$_SESSION["listOfParticipantScores"] = $score;
 	?>
 
 	<script>
@@ -115,15 +115,7 @@
 		<td>
 			<script>document.write(reverse[7][1]);</script>
 		</td>
-	</tr>
-	<tr>
-		<td>
-			<script>document.write(reversea[8][0]);</script>
-		</td>
-		<td>
-			<script>document.write(reversea[8][1]);</script>
-		</td>
-	</tr>
+
 
 	</table>
 </body>
