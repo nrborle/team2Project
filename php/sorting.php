@@ -25,7 +25,7 @@
 		    }
 		}
 
-
+	// convert php into JS
 	var participantList = <?php echo json_encode($participantList); ?>;
 	var score = <?php echo json_encode($score); ?>;
 	var a = [];
