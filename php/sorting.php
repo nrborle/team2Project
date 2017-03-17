@@ -11,8 +11,8 @@
 		//$score = array("13","42","33","24","1","13","41","14","33","14","1","43","34","54","23");
 
 	#will get real values from here
-		$_SESSION["participantList"] = $participantList;
-		$_SESSION["participantTotalList"] = $score;
+		@$_SESSION["participantList"] = $participantList;
+		@$_SESSION["participantTotalList"] = $score;
 	?>
 
 	<script>
