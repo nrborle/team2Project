@@ -50,3 +50,5 @@ include "php/results.php";
 </form>
 </body>
 </html>
+
+<script src="scripts/TJ-7_score_calculator.js"></script>
