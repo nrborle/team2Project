@@ -12,7 +12,7 @@ CREATE TABLE Event (
 	judge3 VARCHAR(255),
 	PRIMARY KEY (id)
 	);
-	
+
 CREATE TABLE Topic (
 	name VARCHAR(255) NOT NULL,
 	eventID int,
@@ -55,3 +55,8 @@ CREATE TABLE Scoresheet (
 	FOREIGN KEY (eventID, speakerID) REFERENCES Speaker(eventID, id)
 );
 
+CREATE TABLE user (
+	username VARCHAR(255) NOT NULL,
+	password VARCHAR(255),
+	PRIMARY KEY (username)
+);
