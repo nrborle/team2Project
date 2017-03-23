@@ -25,11 +25,11 @@
 					<li id="J3_I_link"><a href="#">Judge 3 Impromptu Scoresheet</a></li>
 				</ul>
 			</li>
+			<li id="results_link"><a href="#">Results</a></li>
 		</ul>
 	</nav>
 
 <form action="formData.php" method="post">
-
 <?php
 include "php/participantList.php";
 include "php/timekeeperForm.php";
@@ -42,11 +42,13 @@ printScoreSheet(2, "I", false);
 printScoreSheet(3, "P", false);
 printScoreSheet(3, "I", false);
 
-include "php/results.php";
+include "php/resultsTable.php";
 
 ?>
-<!-- <input type="number" name="J0PR0C0"> -->
-<input type="submit" value="Submit">
+
+<button type="submit">Submit</button>
 </form>
+
+<script src="scripts/TJ-7_score_calculator.js"></script>
 </body>
 </html>
