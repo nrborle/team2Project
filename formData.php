@@ -12,10 +12,10 @@ $secondArray_I = array();
 
 //Prepare minute and second arrays
 for ($i=1; $i <= 15; $i++) {
-  $minuteArray_P[$i - 1] = $_POST["$i"."_p_min"];
-  $secondArray_P[$i - 1] = $_POST["$i"."_p_sec"];
-  $minuteArray_I[$i - 1] = $_POST["$i"."_i_min"];
-  $secondArray_I[$i - 1] = $_POST["$i"."_i_sec"];
+  $minuteArray_P[$i - 1] = ($_POST["T1_"."$i"."_p_min"] + $_POST["T2_"."$i"."_p_min"])/2;
+  $secondArray_P[$i - 1] = ($_POST["T1_"."$i"."_p_sec"] + $_POST["T2_"."$i"."_p_sec"])/2;
+  $minuteArray_I[$i - 1] = ($_POST["T1_"."$i"."_i_min"] + $_POST["T2_"."$i"."_i_min"])/2;
+  $secondArray_I[$i - 1] = ($_POST["T1_"."$i"."_i_sec"] + $_POST["T1_"."$i"."_i_sec"])/2;
 }
 $timeFaultValuesArray = array();
 for ($i=0; $i <= 14; $i++) {
