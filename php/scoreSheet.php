@@ -35,7 +35,7 @@ function printScoreSheet($judge, $type,  $prevInput){
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal1_C13">0</td>
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal1_C14">0</td>
 </thead>
-<tr><td>Aroused interest</td>
+<tr class = "alternate1"><td>Aroused interest</td>
 <td><input type="number" name="<?php echo $sheet_id ?>R0C0" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R0C0"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R0C0"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R0C1" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R0C1"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R0C1"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R0C2" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R0C2"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R0C2"></td>
@@ -86,7 +86,7 @@ function printScoreSheet($judge, $type,  $prevInput){
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal2_C13">0</td>
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal2_C14">0</td>
 </thead>
-<tr><td>Information complete & logically presented</td>
+<tr class = "alternate1"><td>Information complete & logically presented</td>
 <td><input type="number" name="<?php echo $sheet_id ?>R2C0" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R2C0"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R2C0"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R2C1" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R2C1"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R2C1"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R2C2" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R2C2"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R2C2"></td>
@@ -120,7 +120,7 @@ function printScoreSheet($judge, $type,  $prevInput){
 <td><input type="number" name="<?php echo $sheet_id ?>R3C13" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R3C13"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R3C13"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R3C14" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R3C14"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R3C14"></td>
 </tr>
-<tr><td>Speech developed with originality</td>
+<tr class = "alternate1"><td>Speech developed with originality</td>
 <td><input type="number" name="<?php echo $sheet_id ?>R4C0" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R4C0"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R4C0"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R4C1" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R4C1"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R4C1"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R4C2" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R4C2"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R4C2"></td>
@@ -154,7 +154,7 @@ function printScoreSheet($judge, $type,  $prevInput){
 <td><input type="number" name="<?php echo $sheet_id ?>R5C13" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R5C13"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R5C13"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R5C14" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R5C14"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R5C14"></td>
 </tr>
-<tr><td>Kept to topic</td>
+<tr class = "alternate1"><td>Kept to topic</td>
 <td><input type="number" name="<?php echo $sheet_id ?>R6C0" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R6C0"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R6C0"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R6C1" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R6C1"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R6C1"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R6C2" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R6C2"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R6C2"></td>
@@ -205,7 +205,7 @@ function printScoreSheet($judge, $type,  $prevInput){
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal3_C13">0</td>
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal3_C14">0</td>
 </thead>
-<tr><td>Left audience with an appreciation of topic</td>
+<tr class = "alternate1"><td>Left audience with an appreciation of topic</td>
 <td><input type="number" name="<?php echo $sheet_id ?>R8C0" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R8C0"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R8C0"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R8C1" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R8C1"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R8C1"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R8C2" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R8C2"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R8C2"></td>
@@ -239,7 +239,7 @@ function printScoreSheet($judge, $type,  $prevInput){
 <td><input type="number" name="<?php echo $sheet_id ?>R9C13" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R9C13"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R9C13"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R9C14" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R9C14"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R9C14"></td>
 </tr>
-<tr><td>Logical: a capsule of what has been said</td>
+<tr class = "alternate1"><td>Logical: a capsule of what has been said</td>
 <td><input type="number" name="<?php echo $sheet_id ?>R10C0" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R10C0"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R10C0"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R10C1" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R10C1"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R10C1"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R10C2" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R10C2"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R10C2"></td>
@@ -273,7 +273,7 @@ function printScoreSheet($judge, $type,  $prevInput){
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal4_C13">0</td>
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal4_C14">0</td>
 </thead>
-<tr><td>Spoke to audience with enthusiasm, confidence and eye contact</td>
+<tr class = "alternate1"><td>Spoke to audience with enthusiasm, confidence and eye contact</td>
 <td><input type="number" name="<?php echo $sheet_id ?>R11C0" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R11C0"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R11C0"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R11C1" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R11C1"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R11C1"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R11C2" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R11C2"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R11C2"></td>
@@ -307,7 +307,7 @@ function printScoreSheet($judge, $type,  $prevInput){
 <td><input type="number" name="<?php echo $sheet_id ?>R12C13" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R12C13"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R12C13"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R12C14" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R12C14"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R12C14"></td>
 </tr>
-<tr><td>Proper stance, audible, correct pronunciation & enunciation</td>
+<tr class = "alternate1"><td>Proper stance, audible, correct pronunciation & enunciation</td>
 <td><input type="number" name="<?php echo $sheet_id ?>R13C0" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R13C0"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R13C0"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R13C1" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R13C1"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R13C1"></td>
 <td><input type="number" name="<?php echo $sheet_id ?>R13C2" min="0" max="10"<?php if($prevInput){echo "value=\"".$tableData["R13C2"]."\"";}?> class="cell" id="<?php echo $sheet_id ?>R13C2"></td>
