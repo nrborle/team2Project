@@ -1,5 +1,5 @@
 <?php
-
+// phpinfo();
   // Variables
   $cell = null;
   $unweighted = [[[[]]]];
@@ -15,8 +15,16 @@
             {
               for($i=0;$i<=13;$i++)
                 {
-                  //$unweighted[$p][$j][$s][$i] = $_POST["p".$p."j".$j."s".$s."i".$i];
-                  $GLOBALS['unweighted'][$p][$j][$s][$i] = 1;
+                  $jj = $j + 1;
+                  if($s == 0){
+                    $GLOBALS['unweighted'][$p][$j][$s][$i] = $_POST["J".$jj."PR".$i."C".$p];
+                  }elseif($s == 1){
+                    $GLOBALS['unweighted'][$p][$j][$s][$i] = $_POST["J".$jj."IR".$i."C".$p];
+                  }else{
+                    var_dump($s == 0);
+                  }
+                  // $GLOBALS['unweighted'][$p][$j][$s][$i] = $_POST["J1PR0C0"];
+                  // echo($_POST["J1PR0C0"]);
                 }
             }
         }
@@ -31,6 +39,7 @@
         {
           for($s=0;$s<=1;$s++)
             {
+              // $testt = $GLOBALS['unweighted'][0][0][0][0];
               applyWeight($p, $j, $s, $GLOBALS['unweighted'][$p][$j][$s]);
             }
         }
@@ -68,14 +77,14 @@
               for($i=0;$i<=13;$i++)
                 {
                   //$unweighted[$p][$j][$s][$i] = $_POST["p".$p."j".$j."s".$s."i".$i];
-                  echo($GLOBALS['weightedScores'][$p][$j][$s][$i]);
-                  echo(" -");
+                  //echo($GLOBALS['weightedScores'][$p][$j][$s][$i]);
+                  //echo(" -");
                 }
-                echo('Speech Type'."\n");
+                //echo('Speech Type'."\n");
             }
-          echo('Judge Number'."\n");
+          //echo('Judge Number'."\n");
         }
-        echo('Participant Number'."\n");
+        //echo('Participant Number'."\n");
     }
   }
 
@@ -124,9 +133,12 @@
 inputData();
 //echo ($unweighted[1][2][0][4]);
 weighData();
+//echo "Pre-Time Fault totals:<br><br>";
+$sumDataArray = array();
 for($i = 0; $i < count(sumData()); $i++){
-  echo("Participant ".$i.": <br>");
-  echo(sumData()[$i]."<br>");
+  //echo("Participant ".$i.": <br>");
+  //echo(sumData()[$i]."<br>");
+  $sumDataArray[$i] = sumData()[$i];
 }
 
 ?>

@@ -37,11 +37,11 @@
 			a[i] = [participantList[i],score[i]];
 		}
 
-		
+
 
 		var sorted = a.sort(sortbysecond);
 		var reverse = sorted.reverse(sortbysecond);
-		
+
 	</script>
 	<table>
 	<tr>
@@ -120,6 +120,3 @@
 	</table>
 </body>
 </html>
-
-
-

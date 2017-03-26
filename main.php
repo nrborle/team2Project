@@ -18,9 +18,9 @@
 			<li >Scoresheets
 				<ul class="sub-menu">
 					<li id="J1_P_link"><a href="#">Judge 1 Prepared Scoresheet</a></li>
-					<li id="J1_I_link"><a href="#">Judge 1 Impromptu Scoresheet</a></li>	
+					<li id="J1_I_link"><a href="#">Judge 1 Impromptu Scoresheet</a></li>
 					<li id="J2_P_link"><a href="#">Judge 2 Prepared Scoresheet</a></li>
-					<li id="J2_I_link"><a href="#">Judge 2 Impromptu Scoresheet</a></li>	
+					<li id="J2_I_link"><a href="#">Judge 2 Impromptu Scoresheet</a></li>
 					<li id="J3_P_link"><a href="#">Judge 3 Prepared Scoresheet</a></li>
 					<li id="J3_I_link"><a href="#">Judge 3 Impromptu Scoresheet</a></li>
 				</ul>
@@ -42,11 +42,13 @@ printScoreSheet(2, "I", false);
 printScoreSheet(3, "P", false);
 printScoreSheet(3, "I", false);
 
-include "php/results.php";
+include "php/resultsTable.php";
 
 ?>
 
 <button type="submit">Submit</button>
 </form>
+
+<script src="scripts/TJ-7_score_calculator.js"></script>
 </body>
 </html>
