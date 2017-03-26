@@ -53,3 +53,19 @@ tr:hover{
 .hidden {
 	display:			none;
 }
+html{
+	background-color: #287385;
+}
+input[type=text], input[type=number]{
+    background-color: inherit;
+    color: white;
+}
+thead, .head{
+	background-color: #5EE582;
+}
+form{
+	background-color: #66A9B9;
+}
+.alternate1{
+	background-color: #96CBD8;
+}
