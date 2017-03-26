@@ -13,6 +13,7 @@
 
 	<nav>
 		<ul>
+			<li id="event_link"><a href='#'>Event Details</a></li>
 			<li id="speakers_link"><a href="#">Speakers</a></li>
 			<li id="timekeeper_link"><a href="#">Timekeeper</a></li>
 			<li >Scoresheets
@@ -31,6 +32,7 @@
 
 <form action="formData.php" method="post">
 <?php
+include "php/eventDetails.php";
 include "php/participantList.php";
 include "php/timekeeperForm.php";
 include "php/scoreSheet.php";

@@ -9,6 +9,7 @@ window.onload = function() {
 	attachLink("J3_P_link", "judge_3_prepared");
 	attachLink("J3_I_link", "judge_3_impromptu");
 	attachLink("results_link", "results");
+	attachLink("event_link", "event");
 }
 function attachLink(id, target) {
 	var link = document.getElementById(id);
