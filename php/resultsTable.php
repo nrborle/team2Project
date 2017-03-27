@@ -12,7 +12,7 @@
 ?>
 <section id="results">
 <table>
-	<caption>Final Results</caption>
+	<caption>Score Before Time Faults</caption>
 	<thead><tr><th>Rank</th><th>Speaker Name</th><th>Score</th></tr></thead>
 	<tr class = "alternate1"><td>1</td><td id="participant_name_0"></td><td id="participant_score_0"></td></tr>
 	<tr><td>2</td><td id="participant_name_1"></td><td id="participant_score_1"></td></tr>
