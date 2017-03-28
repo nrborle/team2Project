@@ -44,7 +44,8 @@ table, th, td{
 	border:				1px solid black;
 }
 tr:hover{
-	background-color:	#f5f5f5
+	background-color:	#f5f5f5;
+	color: black;
 }
 .cell {
 	border:				none;
@@ -53,19 +54,38 @@ tr:hover{
 .hidden {
 	display:			none;
 }
+td{
+	padding: 10px;
+}
+th{
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+.subtotal{
+	text-align: center;
+}
 html{
-	background-color: #287385;
+	background-color: #F2F2F2;
 }
 input[type=text], input[type=number]{
     background-color: inherit;
-    color: white;
+    color: black;
+}
+input:focus{
+	background-color: white;
 }
 thead, .head{
-	background-color: #5EE582;
+	background-color: #287385;
+	color: white;
 }
 form{
-	background-color: #66A9B9;
+	background-color: inherit;
+	margin-right: auto;
 }
 .alternate1{
-	background-color: #96CBD8;
+	background-color: #CBEAF1;
+}
+.alternate2{
+	background-color: #D1D8F3;
 }

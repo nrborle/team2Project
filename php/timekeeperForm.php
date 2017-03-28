@@ -27,7 +27,7 @@
       <td><input type="text" name="T1_1_i_min" id="r1c3" min="0"></td>
       <td><input type="text" name="T1_1_i_sec" id="r1c4" min="0"></td>
     </tr>
-    <tr>
+    <tr class = "alternate2">
       <td>2.</td>
       <td><input type="text" name="T1_2_p_min" id="r2c1" min="0"></td>
       <td><input type="text" name="T1_2_p_sec" id="r2c2" min="0"></td>
@@ -43,7 +43,7 @@
       <td><input type="text" name="T1_3_i_min" id="r3c3" min="0"></td>
       <td><input type="text" name="T1_3_i_sec" id="r3c4" min="0"></td>
     </tr>
-    <tr>
+    <tr class = "alternate2">
       <td>4.</td>
       <td><input type="text" name="T1_4_p_min" id="r4c1" min="0"></td>
       <td><input type="text" name="T1_4_p_sec" id="r4c2" min="0"></td>
@@ -59,7 +59,7 @@
       <td><input type="text" name="T1_5_i_min" id="r5c3" min="0"></td>
       <td><input type="text" name="T1_5_i_sec" id="r5c4" min="0"></td>
     </tr>
-    <tr>
+    <tr class = "alternate2">
       <td>6.</td>
       <td><input type="text" name="T1_6_p_min" id="r6c1" min="0"></td>
       <td><input type="text" name="T1_6_p_sec" id="r6c2" min="0"></td>
@@ -75,7 +75,7 @@
       <td><input type="text" name="T1_7_i_min" id="r7c3" min="0"></td>
       <td><input type="text" name="T1_7_i_sec" id="r7c4" min="0"></td>
     </tr>
-    <tr>
+    <tr class = "alternate2">
       <td>8.</td>
       <td><input type="text" name="T1_8_p_min" id="r8c1" min="0"></td>
       <td><input type="text" name="T1_8_p_sec" id="r8c2" min="0"></td>
@@ -91,7 +91,7 @@
       <td><input type="text" name="T1_9_i_min" id="r9c3" min="0"></td>
       <td><input type="text" name="T1_9_i_sec" id="r9c4" min="0"></td>
     </tr>
-    <tr>
+    <tr class = "alternate2">
       <td>10.</td>
       <td><input type="text" name="T1_10_p_min" id="r10c1" min="0"></td>
       <td><input type="text" name="T1_10_p_sec" id="r10c2" min="0"></td>
@@ -107,7 +107,7 @@
       <td><input type="text" name="T1_11_i_min" id="r11c3" min="0"></td>
       <td><input type="text" name="T1_11_i_sec" id="r11c4" min="0"></td>
     </tr>
-    <tr>
+    <tr class = "alternate2">
       <td>12.</td>
       <td><input type="text" name="T1_12_p_min" id="r12c1" min="0"></td>
       <td><input type="text" name="T1_12_p_sec" id="r12c2" min="0"></td>
@@ -123,7 +123,7 @@
       <td><input type="text" name="T1_13_i_min" id="r13c3" min="0"></td>
       <td><input type="text" name="T1_13_i_sec" id="r13c4" min="0"></td>
     </tr>
-    <tr>
+    <tr class = "alternate2">
       <td>14.</td>
       <td><input type="text" name="T1_14_p_min" id="r14c1" min="0"></td>
       <td><input type="text" name="T1_14_p_sec" id="r14c2" min="0"></td>
