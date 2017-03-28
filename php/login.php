@@ -1,4 +1,4 @@
-<?php 
+<?php
   include 'connect.php';
   session_start();
 
@@ -12,8 +12,8 @@
       <link rel="stylesheet" type="text/css" href="#">
       <script type="text/javascript" src="scripts/Validate.js"></script>
       </head>
-      <body>     
-        <div class="login">      
+      <body>
+        <div class="login">
           <form action="login.php" method="post" id="mainForm">
             <center><br/><br/><br/><br/>
               Username:<br><br>
@@ -28,15 +28,14 @@
       </html>
 
 <!-- php check username, password in the database-->
-<?php 
-  include 'php/connect.php';
+<?php
 
   if(isset($_POST['login'])){
 
-    @$username = $_POST['username']; 
+    @$username = $_POST['username'];
     @$password = $_POST['password'];
 
-    $count = 0;      
+    $count = 0;
     $result=("SELECT * FROM user Where password = '$password' and username = '$username' ");
     $result1 = mysqli_query($connection,$result) or die(mysql_error());
 
@@ -48,17 +47,18 @@
 
     if(( (!empty($username) and !empty($password)) and $count != 0)&&(strcmp($username, @$a) == 0) && (strcmp($password, @$b) == 0))
     {
-    header('Location: main.php');
+    $_SESSION['username'] = $username;
+    header('Location: ../main.php');
 
     }else{
     header('Location: login.php');
     }
-  } 
+  }
 ?>
 
 <!-- Js, If fields are empty, change color to red-->
 <script type="text/javascript">
-  function isBlank(inputField){   
+  function isBlank(inputField){
     if (inputField.value==""){
          return true;
       }
@@ -99,4 +99,3 @@
 }
 
 </script>
-

@@ -1,5 +1,11 @@
 <?php
-	//pre-checking stuff to load any saved data will go here
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}else {
+	if (!isset($_SESSION['username'])) {
+		header('Location: php/login.php');
+	}
+}
 ?>
 
 <!DOCTYPE html>
@@ -52,5 +58,7 @@ include "php/resultsTable.php";
 </form>
 
 <script src="scripts/TJ-7_score_calculator.js"></script>
+<br><br>
+<a href='php/logout.php'>Logout</a>
 </body>
 </html>

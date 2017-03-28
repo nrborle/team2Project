@@ -1,3 +1,13 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}else {
+	if (!isset($_SESSION['username'])) {
+		header('Location: php/login.php');
+	}
+}
+ ?>
+
 <section id="speakers">
    <table>
       <thead><tr><th>Participant List</th><th>Name</th><th>Squadron</th></tr></thead>

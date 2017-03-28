@@ -1,4 +1,13 @@
 <?php
+	if (session_status() == PHP_SESSION_NONE) {
+		session_start();
+	}else {
+		if (!isset($_SESSION['username'])) {
+			header('Location: php/login.php');
+		}
+	}
+
+
 include('php/weightValues.php');
 //$sumDataArray has weighted data for each speaker at this point.
 include('php/getTimeFaults.php');

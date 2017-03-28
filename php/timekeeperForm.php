@@ -1,3 +1,13 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}else {
+	if (!isset($_SESSION['username'])) {
+		header('Location: php/login.php');
+	}
+}
+ ?>
+
 <section id="timekeeper">
 <h1>Timekeeper Data</h1>
 <div style="overflow-x:auto;">

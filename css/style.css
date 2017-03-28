@@ -89,3 +89,6 @@ form{
 .alternate2{
 	background-color: #D1D8F3;
 }
+#patchTHEAD th{
+	text-align: center;
+}

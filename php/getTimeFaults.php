@@ -1,6 +1,14 @@
 
 <?php
 
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}else {
+	if (!isset($_SESSION['username'])) {
+		header('Location: php/login.php');
+	}
+}
+
 function getTimeFaults($speechType, $min, $sec){
     $s = $sec + $min*60;
 if (strcmp($speechType, "Prepared")==0){
