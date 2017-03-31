@@ -14,7 +14,7 @@ if (session_status() == PHP_SESSION_NONE) {
    <head lang="en">
       <meta charset="utf-8">
       <title>User Login</title>
-      <link rel="stylesheet" type="text/css" href="#">
+      <link rel="stylesheet" href="../css/style.css"/>
       <script type="text/javascript" src="scripts/Validate.js"></script>
       </head>
       <body>
@@ -35,7 +35,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <?php
   include 'connect.php';
-  
+
   if(isset($_POST['search'])){
     @$date = $_POST['date'];
     @$level = $_POST['level'];
@@ -65,28 +65,28 @@ if (session_status() == PHP_SESSION_NONE) {
 			      $c = $row['location'];
 			      @$d = $row['id'];
 	      		  echo "<br>";
-      
+
 ?>
 			      <tr>
 			      	<td style="width:20px;"><?php  echo $d;?></td>
 			      	<td style="width:20px;"><?php  echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$a;?></td>
 			      	<td><?php  echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$b;?></td>
-			      	<td><?php  echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$c;?></td
-<?php 
+			      	<td><?php  echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$c;?></td>
+<?php
 			      $count = $count +1;
     		} #ends first while loop
 
 	    $count1 = 0;
-	    @$event=("SELECT * FROM Speaker WHERE eventID ='$d' ");
+	    @$event=("SELECT * FROM Speaker WHERE eventID ='$d' ORDER BY finalScore DESC LIMIT 1 ");
 
 		$event2 = mysqli_query($connection,$event) or die(mysql_error());
-	    	while ($row = mysqli_fetch_assoc($event2)) {
+	    	if($row = mysqli_fetch_assoc($event2)) {
 				  $e = $row['speaker'];
 			      $f = $row['finalScore'];
 			      $g = $row['squad'];
 			      $h = $row['eventID'];
 			      $count1 = $count1 +1;
-	      		  echo "<br>";
+	      		echo "<br>";
 
 ?>
 
@@ -97,8 +97,8 @@ if (session_status() == PHP_SESSION_NONE) {
 <?php
      	 } #ends second while loop
 ?>
-    	  </table> 
-    	
+    	  </table>
+
 
 <?php
 	echo "<br><br>";
@@ -164,3 +164,7 @@ if (session_status() == PHP_SESSION_NONE) {
 
 </script>
 
+<br>
+<a href='../main.php'>Return to Main</a>
+<br>
+<a href='logout.php'>Logout</a>

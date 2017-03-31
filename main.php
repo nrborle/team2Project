@@ -58,7 +58,11 @@ include "php/resultsTable.php";
 </form>
 
 <script src="scripts/TJ-7_score_calculator.js"></script>
-<br><br>
+<br>
+<?php
+include('php/displayEventSearch.php')
+ ?>
+<br>
 <a href='php/logout.php'>Logout</a>
 </body>
 </html>

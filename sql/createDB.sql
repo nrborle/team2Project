@@ -1,7 +1,7 @@
 CREATE TABLE Event (
 	id int NOT NULL,
 	date DATE,
-	level int,
+	level VARCHAR(255),
 	location VARCHAR(255),
 	PRIMARY KEY (id)
 	);
