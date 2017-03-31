@@ -41,7 +41,7 @@ if (session_status() == PHP_SESSION_NONE) {
     @$level = $_POST['level'];
     @$location = $_POST['location'];
     $count = 0;
-    $result=("SELECT * FROM Event WHERE EventDate like '%$date%'and  level like '$level%' and location like '$location%'");
+    $result=("SELECT * FROM Event WHERE date like '%$date%'and  level like '$level%' and location like '$location%'");
 ?>
 
     	<center>
@@ -60,10 +60,10 @@ if (session_status() == PHP_SESSION_NONE) {
 <?php
 		$result1 = mysqli_query($connection,$result) or die(mysql_error());
     		while ($row = mysqli_fetch_assoc($result1)) {
-			      $a = $row['eventDate'];
+			      $a = $row['date'];
 			      $b = $row['level'];
 			      $c = $row['location'];
-			      @$d = $row['eventID'];
+			      @$d = $row['id'];
 	      		  echo "<br>";
       
 ?>
