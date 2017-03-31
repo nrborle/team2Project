@@ -42,6 +42,7 @@ include "php/eventDetails.php";
 include "php/participantList.php";
 include "php/timekeeperForm.php";
 include "php/scoreSheet.php";
+include "php/insertIntoDB.php";
 
 printScoreSheet(1, "P", false);
 printScoreSheet(1, "I", false);
