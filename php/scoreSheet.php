@@ -23,9 +23,9 @@ function printScoreSheet($judge, $type,  $prevInput){
 	}
 ?>
 <section id = "<?php echo $section_id?>">
-<table id="<?php echo $sheet_id ?>">
+<table class="scoresheet" id="<?php echo $sheet_id ?>">
 	<caption><?php echo $title ?></caption>
-	<thead id="patchTHEAD"><th>Speaker Name:</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></thead>
+	<thead id="patchTHEAD"><th>Speaker Number:</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></thead>
 	<thead><th>Introduction</th>
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal1_C0">0</td>
 <th class="subtotal" id="<?php echo $sheet_id ?>subtotal1_C1">0</td>

@@ -28,7 +28,7 @@ else
 
             #Retrieve and output speaker data into a table
             mysqli_stmt_free_result($stmt);
-            $sql = "SELECT speaker, finalScore, squad FROM Speaker WHERE eventID = ? ORDER BY finalScore ASC";
+            $sql = "SELECT speaker, finalScore, squad FROM Speaker WHERE eventID = ? ORDER BY finalScore DESC";
             if($stmt = mysqli_prepare($connection, $sql))
             {
                 mysqli_stmt_bind_param($stmt, 'i', $eventID);

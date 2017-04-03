@@ -3,8 +3,11 @@ var impromptuWeights = [2,1,1,1,2,2,2,1,1,1,1,3,3,3];
 var prepared = "prepared";
 var impromptu = "impromptu";
 
-var scores = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 var speakerNames = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", ""];
+var scores = 			[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var preparedFaults = 	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var impromptuFaults = 	[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+var finalScores = 		[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 for(var i = 0; i < 15; i++){
 	getSpeakerName(i);
@@ -22,12 +25,15 @@ function getSpeakerName(speakerNumber){
 	nameField.addEventListener("change", function(){
 		speakerNames[speakerNumber] = this.value;
 		//console.log(this.value);
+		updateResults();
 	});
 }
 
 function addAllUpdaters(sheet, type){
 
     for(var c = 0; c < 15; c++){
+		addTimeFaultUpdater(c);
+		
         for(var r = 0; r <= 1; r++){            
             addTotalUpdater(sheet, r, c, 0, 1, sheet+"subtotal1_C"+c);  
         }
@@ -64,18 +70,38 @@ function addWeightedTotalUpdater(sheet, type, row, col, fromRow, toRow, target){
             sub.innerHTML = sum.toFixed(1);
 			
 			scores[col] = finalScore(col);
-			updateResults();
+			updateTotal(col);
         });
 }
+
+function addTimeFaultUpdater(speakerNum){
+	for(var i = 1; i <= 2; i++){
+		for(var j = 1; j<=2; j++){
+			var cell = document.getElementById("T"+i+"r"+(speakerNum+1)+"c"+j);
+			cell.addEventListener("change", function(){
+				preparedFaults[speakerNum] = timeFault(getPreparedTime(speakerNum+1), 300, 360, 7);
+				updateTotal(speakerNum);
+			});
+		}
+		for(var j = 3; j<=4; j++){
+			var cell = document.getElementById("T"+i+"r"+(speakerNum+1)+"c"+j);
+			cell.addEventListener("change", function(){
+				impromptuFaults[speakerNum] = timeFault(getImpromptuTime(speakerNum+1), 300, 360, 7);
+				updateTotal(speakerNum);
+			});
+		}
+	}
+}
+
 function finalScore(col){
 	
 	var total = 0;
-	total += parseFloat(document.getElementById("J1Ptotal_C"+col).innerHTML);
-	total += parseFloat(document.getElementById("J2Ptotal_C"+col).innerHTML);
-	total += parseFloat(document.getElementById("J3Ptotal_C"+col).innerHTML);
-	total += parseFloat(document.getElementById("J1Itotal_C"+col).innerHTML);
-	total += parseFloat(document.getElementById("J2Itotal_C"+col).innerHTML);
-	total += parseFloat(document.getElementById("J3Itotal_C"+col).innerHTML);
+	total += parseFloat(document.getElementById("J1Ptotal_C"+col).textContent);
+	total += parseFloat(document.getElementById("J2Ptotal_C"+col).textContent);
+	total += parseFloat(document.getElementById("J3Ptotal_C"+col).textContent);
+	total += parseFloat(document.getElementById("J1Itotal_C"+col).textContent);
+	total += parseFloat(document.getElementById("J2Itotal_C"+col).textContent);
+	total += parseFloat(document.getElementById("J3Itotal_C"+col).textContent);
 	//console.log(total);
 	
 	return total;
@@ -116,17 +142,25 @@ function sumWeighted(sheet, type, col, fromRow, toRow){
     return total;
 }
 
+function updateTotal(speakerNum){
+	finalScores[speakerNum] = scores[speakerNum]  - 3*(preparedFaults[speakerNum] + impromptuFaults[speakerNum]);
+	updateResults();
+}
+
 function updateResults(){
 	
 	var order = [];
 	for(var i = 0; i < 15; i++){
-		if(order.length <= 0 || scores[i] <= scores[order[i - 1]]){
+		if(speakerNames[i] == ""){
+			//skip
+		}
+		else if(order.length <= 0 || finalScores[i] <= finalScores[order[i - 1]]){
 			order.push(i);
 		}
 		else{
 			for(var j = 0; j < order.length; j++){
 				
-				if(scores[i] > scores[order[j]]){
+				if(finalScores[i] > finalScores[order[j]]){
 					order.splice(j, 0, i);
 					break;
 				}
@@ -139,11 +173,43 @@ function updateResults(){
 	//console.log(speakerNames);
 	
 	for(var i = 0; i < order.length; i++){
-		document.getElementById("participant_name_"+i).innerHTML = speakerNames[order[i]];		
-		document.getElementById("participant_score_"+i).innerHTML = parseFloat(scores[order[i]]).toFixed(1);
+		if(speakerNames[order[i]] != ""){
+			document.getElementById("participant_name_"+i).textContent = speakerNames[order[i]];		
+			document.getElementById("participant_score_"+i).textContent = parseFloat(finalScores[order[i]]).toFixed(1);
+		}
+		else{
+			document.getElementById("participant_name_"+i).textContent = "";
+			document.getElementById("participant_score_"+i).textContent = "";
+		}
 	}
 }
-
+function timeFault(time, min, max, maxFaults){
+	if(time == 0){
+		return 0;
+	}
+	else{
+		var faults = Math.abs(time - (max + min)/2)%5;
+		return Math.max(faults, maxFaults);
+	}
+}
+function getPreparedTime(speakerNum){
+	
+	var m1 = document.getElementById("T1r"+speakerNum+"c1").value;
+	var s1 = document.getElementById("T1r"+speakerNum+"c2").value;
+	var m2 = document.getElementById("T2r"+speakerNum+"c1").value;
+	var s2 = document.getElementById("T2r"+speakerNum+"c2").value;
+	
+	return ((m1*60 + s1) + (m2*60 + s2))/2;
+}
+function getImpromptuTime(speakerNum){
+	
+	var m1 = document.getElementById("T1r"+speakerNum+"c3").value;
+	var s1 = document.getElementById("T1r"+speakerNum+"c4").value;
+	var m2 = document.getElementById("T2r"+speakerNum+"c3").value;
+	var s2 = document.getElementById("T2r"+speakerNum+"c4").value;
+	
+	return ((m1*60 + s1) + (m2*60 + s2))/2;
+}
 function getCell(sheet, row, col){  
         var id = sheet+"R"+row+"C"+col;
         return document.getElementById(id);     

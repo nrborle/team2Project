@@ -57,7 +57,7 @@ include "php/resultsTable.php";
 <button type="submit">Submit</button>
 </form>
 
-<script src="scripts/TJ-7_score_calculator.js"></script>
+<script src="scripts/score_calculator.js"></script>
 <br>
 <?php
 include('php/displayEventSearch.php')

@@ -10,7 +10,8 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <section id="speakers">
    <table>
-      <thead><tr><th>Participant List</th><th>Name</th><th>Squadron</th></tr></thead>
+   <caption>Speakers List</caption>
+      <thead><tr><th></th><th>Name</th><th>Squadron</th></tr></thead>
       <tbody>
 		<tr class = "alternate1"><td>1</td><td><input type="text" name="P1" id = "P1"></td><td><input type="text" name="S1" id = "S1"></td></tr>
 		<tr class = "alternate2"><td>2</td><td><input type="text" name="P2" id = "P2"></td><td><input type="text" name="S2" id = "S2"></td></tr>
