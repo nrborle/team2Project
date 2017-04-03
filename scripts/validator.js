@@ -1,5 +1,11 @@
 var form = document.getElementById("main_form");
-form.addEventListener("submit", function(e){checkErrors(e)});
+form.addEventListener("submit", function(e){checkErrors(e);});
+
+form.addEventListener("keydown", function(e){
+	if(e.which == 13){
+		e.preventDefault();
+	}
+});
 
 var cells = document.getElementsByClassName("cell");
 for(var i = 0; i < cells.length; i++){

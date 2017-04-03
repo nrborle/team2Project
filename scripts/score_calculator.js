@@ -33,7 +33,7 @@ function getSpeakerName(speakerNumber){
 function addAllUpdaters(sheet, type){
 
     for(var c = 0; c < 15; c++){
-		
+		//subtotal updaters
         for(var r = 0; r <= 1; r++){            
             addTotalUpdater(sheet, r, c, 0, 1, sheet+"subtotal1_C"+c);  
         }
@@ -46,7 +46,7 @@ function addAllUpdaters(sheet, type){
         for(var r = 11; r <= 13; r++){          
             addTotalUpdater(sheet, r, c, 11, 13, sheet+"subtotal4_C"+c);
         }
-        
+        //total updater
         for(var r = 0; r <= 13; r++){
             addWeightedTotalUpdater(sheet, type, r, c, 0, 13, sheet+"total_C" + c);
         }
@@ -164,17 +164,9 @@ function updateResults(){
 					order.splice(j, 0, i);
 					break;
 				}
-				
 			}
 		}
 	}
-	
-	//console.log(speakerNames);
-	//console.log(scores);
-	console.log(preparedFaults);
-	console.log(impromptuFaults);
-	//console.log(order);
-	
 	
 	for(var i = 0; i < order.length; i++){
 		if(speakerNames[order[i]] != ""){
@@ -188,7 +180,6 @@ function updateResults(){
 	}
 }
 function timeFault(time, min, max, maxFaults){
-	console.log(time);
 	if(time == 0){
 		return 0;
 	}
@@ -196,7 +187,6 @@ function timeFault(time, min, max, maxFaults){
 		//var faults = (Math.abs(time - ((max + min)/2)) - ((max-min)/2))/5;
 		var faults = Math.ceil(Math.max((time - max),(min - time))/5);
 		faults = Math.max(0, faults);
-		console.log(faults);
 		return Math.min(faults, maxFaults);
 	}
 }
