@@ -91,7 +91,7 @@ $nameTotalArray = array(
 
 arsort($nameTotalArray);
 
-
+include('php/intertIntoDB.php');
 include('php/results.php');
 
 
