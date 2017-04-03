@@ -26,7 +26,7 @@ else {
   }
 
   if ($permType == 1) {
-    echo "<a href='php/searcheventform.php'>Search For The Winner of a Previous Event</a>";
+    echo "<a class='likeabutton' href='php/searcheventform.php'>Search For The Winner of a Previous Event</a><br>";
   }
 }
 mysqli_close($connection);

@@ -95,3 +95,22 @@ thead tr, .head{
 .error {
 	background-color: red;
 }
+
+#event table tbody tr td input{
+	width: 16em;
+}
+
+#results table{
+	width: 18em;
+}
+
+.likeabutton {
+    text-decoration: none; font: menu;
+    display: inline-block; padding: 2px 8px;
+    background: ButtonFace; color: ButtonText;
+    border-style: solid; border-width: 2px;
+    border-color: ButtonHighlight ButtonShadow ButtonShadow ButtonHighlight;
+}
+.likeabutton:active {
+    border-color: ButtonShadow ButtonHighlight ButtonHighlight ButtonShadow;
+}

@@ -53,8 +53,8 @@ printScoreSheet(3, "I", false);
 include "php/resultsTable.php";
 
 ?>
-
-<button type="submit">Submit</button>
+<br>
+<button class='likeabutton' type="submit">Submit</button>
 </form>
 
 <br>
@@ -62,7 +62,7 @@ include "php/resultsTable.php";
 include('php/displayEventSearch.php')
  ?>
 <br>
-<a href='php/logout.php'>Logout</a>
+<a class="likeabutton" href='php/logout.php'>Logout</a>
 
 <script src="scripts/score_calculator.js"></script>
 <script src="scripts/validator.js"></script>
