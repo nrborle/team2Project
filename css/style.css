@@ -74,20 +74,24 @@ input[type=text], input[type=number]{
 input:focus{
 	background-color: white;
 }
-thead, .head{
-	background-color: #287385;
-	color: white;
-}
+
 form{
 	background-color: inherit;
 	margin-right: auto;
 }
-.alternate1{
+ tr, .alternate1{
 	background-color: #CBEAF1;
 }
 .alternate2{
 	background-color: #D1D8F3;
 }
+thead tr, .head{
+	background-color: #287385;
+	color: white;
+}
 #patchTHEAD th{
 	text-align: center;
+}
+.error {
+	background-color: red;
 }

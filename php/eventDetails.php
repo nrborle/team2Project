@@ -9,10 +9,9 @@ if (session_status() == PHP_SESSION_NONE) {
  ?>
 
 <html>
-<section id="event">
-  <fieldset>
-		<legend>Enter the details for the event below</legend>
+<section id="event" class="hidden">
 		<table>
+		<caption>Effective Speaking Competition</caption>
 		<tr>
 			<td>Date</td>
 			<td><input type="date" name="event_date" id="event_date"></td>
@@ -50,6 +49,5 @@ if (session_status() == PHP_SESSION_NONE) {
 			<td><input type="text" name="event_judge3" id="event_judge3"></td>
 		</tr>
 	</table>
-  </fieldset>
 </section>
 </html>

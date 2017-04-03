@@ -8,7 +8,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
  ?>
 
-<section id="timekeeper">
+<section id="timekeeper" class="hidden">
 <h1>Timekeeper Data</h1>
 <div style="overflow-x:auto;">
 <table style="width:750px">

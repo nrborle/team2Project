@@ -19,7 +19,7 @@
 	}
 
 ?>
-<section id="results">
+<section id="results" class="hidden">
 <table>
 	<caption>Score Before Time Faults</caption>
 	<thead><tr><th>Rank</th><th>Speaker Name</th><th>Score</th></tr></thead>

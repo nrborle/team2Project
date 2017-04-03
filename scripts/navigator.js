@@ -1,5 +1,4 @@
 window.onload = function() {
-	hideAll();
 	attachLink("speakers_link", "speakers");
 	attachLink("timekeeper_link", "timekeeper");
 	attachLink("J1_P_link", "judge_1_prepared");
@@ -10,6 +9,7 @@ window.onload = function() {
 	attachLink("J3_I_link", "judge_3_impromptu");
 	attachLink("results_link", "results");
 	attachLink("event_link", "event");
+	showOnly("event");
 }
 function attachLink(id, target) {
 	var link = document.getElementById(id);

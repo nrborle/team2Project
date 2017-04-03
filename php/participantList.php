@@ -8,7 +8,7 @@ if (session_status() == PHP_SESSION_NONE) {
 }
  ?>
 
-<section id="speakers">
+<section id="speakers" class="hidden">
    <table>
    <caption>Speakers List</caption>
       <thead><tr><th></th><th>Name</th><th>Squadron</th></tr></thead>

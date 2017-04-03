@@ -36,7 +36,7 @@ if (session_status() == PHP_SESSION_NONE) {
 		</ul>
 	</nav>
 
-<form action="formData.php" method="post">
+<form action="formData.php" method="post" id="main_form">
 <?php
 include "php/eventDetails.php";
 include "php/participantList.php";
@@ -57,12 +57,14 @@ include "php/resultsTable.php";
 <button type="submit">Submit</button>
 </form>
 
-<script src="scripts/score_calculator.js"></script>
 <br>
 <?php
 include('php/displayEventSearch.php')
  ?>
 <br>
 <a href='php/logout.php'>Logout</a>
+
+<script src="scripts/score_calculator.js"></script>
+<script src="scripts/validator.js"></script>
 </body>
 </html>
