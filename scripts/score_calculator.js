@@ -11,6 +11,7 @@ var finalScores = 		[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 
 for(var i = 0; i < 15; i++){
 	getSpeakerName(i);
+	addTimeFaultUpdater(i);
 }
 addAllUpdaters("J1P", prepared);
 addAllUpdaters("J2P", prepared);
@@ -32,7 +33,6 @@ function getSpeakerName(speakerNumber){
 function addAllUpdaters(sheet, type){
 
     for(var c = 0; c < 15; c++){
-		addTimeFaultUpdater(c);
 		
         for(var r = 0; r <= 1; r++){            
             addTotalUpdater(sheet, r, c, 0, 1, sheet+"subtotal1_C"+c);  
@@ -86,7 +86,7 @@ function addTimeFaultUpdater(speakerNum){
 		for(var j = 3; j<=4; j++){
 			var cell = document.getElementById("T"+i+"r"+(speakerNum+1)+"c"+j);
 			cell.addEventListener("change", function(){
-				impromptuFaults[speakerNum] = timeFault(getImpromptuTime(speakerNum+1), 300, 360, 7);
+				impromptuFaults[speakerNum] = timeFault(getImpromptuTime(speakerNum+1), 120, 180, 3);
 				updateTotal(speakerNum);
 			});
 		}
@@ -168,9 +168,13 @@ function updateResults(){
 			}
 		}
 	}
-	//console.log(scores);
-	//console.log(order);
+	
 	//console.log(speakerNames);
+	//console.log(scores);
+	console.log(preparedFaults);
+	console.log(impromptuFaults);
+	//console.log(order);
+	
 	
 	for(var i = 0; i < order.length; i++){
 		if(speakerNames[order[i]] != ""){
@@ -184,31 +188,51 @@ function updateResults(){
 	}
 }
 function timeFault(time, min, max, maxFaults){
+	console.log(time);
 	if(time == 0){
 		return 0;
 	}
 	else{
-		var faults = Math.abs(time - (max + min)/2)%5;
-		return Math.max(faults, maxFaults);
+		//var faults = (Math.abs(time - ((max + min)/2)) - ((max-min)/2))/5;
+		var faults = Math.ceil(Math.max((time - max),(min - time))/5);
+		faults = Math.max(0, faults);
+		console.log(faults);
+		return Math.min(faults, maxFaults);
 	}
 }
 function getPreparedTime(speakerNum){
+	//array t: minute 1, second 1, minute2 , second 2
+	var t = [document.getElementById("T1r"+speakerNum+"c1").value, 
+			document.getElementById("T1r"+speakerNum+"c2").value, 
+			document.getElementById("T2r"+speakerNum+"c1").value, 
+			document.getElementById("T2r"+speakerNum+"c2").value];
 	
-	var m1 = document.getElementById("T1r"+speakerNum+"c1").value;
-	var s1 = document.getElementById("T1r"+speakerNum+"c2").value;
-	var m2 = document.getElementById("T2r"+speakerNum+"c1").value;
-	var s2 = document.getElementById("T2r"+speakerNum+"c2").value;
-	
-	return ((m1*60 + s1) + (m2*60 + s2))/2;
+	for(var i = 0; i<4; i++){
+		if(t[i] == ""){
+			t[i] = 0;
+		}
+		else{
+			t[i] = parseFloat(t[i]);
+		}
+	}
+	return ((t[0]*60 + t[1]) + (t[2]*60 + t[3]))/2;
 }
 function getImpromptuTime(speakerNum){
+	//array t: minute 1, second 1, minute2 , second 2
+	var t = [document.getElementById("T1r"+speakerNum+"c3").value, 
+			document.getElementById("T1r"+speakerNum+"c4").value, 
+			document.getElementById("T2r"+speakerNum+"c3").value, 
+			document.getElementById("T2r"+speakerNum+"c4").value];
 	
-	var m1 = document.getElementById("T1r"+speakerNum+"c3").value;
-	var s1 = document.getElementById("T1r"+speakerNum+"c4").value;
-	var m2 = document.getElementById("T2r"+speakerNum+"c3").value;
-	var s2 = document.getElementById("T2r"+speakerNum+"c4").value;
-	
-	return ((m1*60 + s1) + (m2*60 + s2))/2;
+	for(var i = 0; i<4; i++){
+		if(t[i] == ""){
+			t[i] = 0;
+		}
+		else{
+			t[i] = parseFloat(t[i]);
+		}
+	}
+	return ((t[0]*60 + t[1]) + (t[2]*60 + t[3]))/2;
 }
 function getCell(sheet, row, col){  
         var id = sheet+"R"+row+"C"+col;
