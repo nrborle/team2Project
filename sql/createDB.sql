@@ -1,5 +1,5 @@
 CREATE TABLE Event (
-	id int NOT NULL,
+	id int NOT NULL AUTO_INCREMENT,
 	date DATE,
 	level VARCHAR(255),
 	location VARCHAR(255),

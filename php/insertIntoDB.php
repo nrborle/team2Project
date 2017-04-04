@@ -15,23 +15,21 @@ if (!$connection) {
 }
 
 // Entering the Event Details
-$stmt = $connection->prepare("INSERT INTO event (id,date,level,location) VALUES (?,?,?,?)");
-$stmt->bind_param("ssss", $ID, $date, $level, $location);
+$stmt = $connection->prepare("INSERT INTO event (date,level,location) VALUES (?,?,?)");
+$stmt->bind_param("sss", $date, $level, $location);
 
-$ID = $_POST['event_id'];
 $date = $_POST['event_date'];
 $level = $_POST['event_level'];
 $location = $_POST['event_location'];
 $stmt->execute();
-
+$eventID = mysqli_insert_id($connection);
 // Entering each speakers generic info
-$stmt = $connection->prepare("INSERT INTO speaker (eventID,speaker,finalScore,squad) VALUES (?,?,?,?)");
-$stmt->bind_param("ssss", $ID, $speaker, $finalScore, $squad);
+$stmt = $connection->prepare("INSERT INTO speaker (eventID, speaker,finalScore,squad) VALUES (?,?,?,?)");
+$stmt->bind_param("isss", $eventID, $speaker, $finalScore, $squad);
 
 for($i=1;$i<=15;$i++) {
-	$ID = $_POST['event_id'];
 	$speaker = $_POST['P'.$i];
-	$finalScore = $_POST['0'];
+	$finalScore = '0';
 	$squad = $_POST['S'.$i];
 	$stmt->execute();
 }
