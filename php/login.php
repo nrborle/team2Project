@@ -48,6 +48,7 @@
     if(( (!empty($username) and !empty($password)) and $count != 0)&&(strcmp($username, @$a) == 0) && (strcmp($password, @$b) == 0))
     {
     $_SESSION['username'] = $username;
+	$_SESSION['permissions'] = $row['permissions'];
     header('Location: ../main.php');
 
     }else{

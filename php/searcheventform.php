@@ -1,11 +1,11 @@
 <?php
 if (session_status() == PHP_SESSION_NONE) {
 	session_start();
-}else {
-	if (!isset($_SESSION['username'])) {
-		header('Location: php/login.php');
-	}
 }
+if (!isset($_SESSION['username']) || $_SESSION['permissions'] != 1) {
+	header('Location: ../main.php');
+}
+
 ?>
 
 <!-- html form-->
