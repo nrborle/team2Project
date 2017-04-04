@@ -29,7 +29,7 @@ $stmt->bind_param("isss", $eventID, $speaker, $finalScore, $squad);
 
 for($i=1;$i<=15;$i++) {
 	$speaker = $_POST['P'.$i];
-	$finalScore = '0';
+	$finalScore = $grandTotal[$i-1];
 	$squad = $_POST['S'.$i];
 	$stmt->execute();
 }
