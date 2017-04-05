@@ -89,9 +89,9 @@ if (session_status() == PHP_SESSION_NONE) {
 	      		echo "<br>";
 
 ?>
-			      	<td style="width:20px;"> <?php 
+			      	<td style="width:20px;"> <?php
               echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$e;
-              ?>               
+              ?>
               </td>
 			      	<td><?php  echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$f;?></td>
 			      	<td><?php  echo "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$g;?></td>

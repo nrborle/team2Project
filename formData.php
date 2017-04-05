@@ -69,6 +69,8 @@ $nameTotalArray = [
   $_POST['P15'] => [$grandTotal[14],$_POST['S15']]
 ];
 
+
+
 /* OLD
 $nameTotalArray = array(
   $_POST['P1'] => $grandTotal[0],
@@ -96,3 +98,4 @@ include('php/results.php');
 
 
  ?>
+<a href='main.php'>Return to Main</a>
