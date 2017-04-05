@@ -12,11 +12,11 @@ if (session_status() == PHP_SESSION_NONE) {
 <h1>Timekeeper Data</h1>
 <div style="overflow-x:auto;">
 <table style="width:750px">
-<caption>Timekeper 1</caption>
+<caption>Timekeeper 1</caption>
   <tr class = "head">
     <th rowspan="3">Speaker</th>
     <th colspan="2">Prepared Speech</th>
-    <th colspan="2">Impromtu speech</th>
+    <th colspan="2">Impromptu speech</th>
   </tr>
   <tr class = "head">
     <th colspan="2">Duration</th>
@@ -160,11 +160,11 @@ if (session_status() == PHP_SESSION_NONE) {
 
 <div style="overflow-x:auto;">
 <table style="width:750px">
-<caption>Timekeper 2</caption>
+<caption>Timekeeper 2</caption>
   <tr class = "head">
     <th rowspan="3">Speaker</th>
     <th colspan="2">Prepared Speech</th>
-    <th colspan="2">Impromtu speech</th>
+    <th colspan="2">Impromptu speech</th>
   </tr>
   <tr class = "head">
     <th colspan="2">Duration</th>

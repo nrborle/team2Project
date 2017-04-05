@@ -180,7 +180,8 @@ function updateResults(){
 	}
 }
 function timeFault(time, min, max, maxFaults){
-	if(time == 0){
+	console.log(time);
+	if(isNaN(time) || time == 0){
 		return 0;
 	}
 	else{
@@ -191,38 +192,22 @@ function timeFault(time, min, max, maxFaults){
 	}
 }
 function getPreparedTime(speakerNum){
-	//array t: minute 1, second 1, minute2 , second 2
-	var t = [document.getElementById("T1r"+speakerNum+"c1").value, 
-			document.getElementById("T1r"+speakerNum+"c2").value, 
-			document.getElementById("T2r"+speakerNum+"c1").value, 
-			document.getElementById("T2r"+speakerNum+"c2").value];
+	var minutes = document.getElementById("T1r"+speakerNum+"c1").value;
+	var seconds	= document.getElementById("T1r"+speakerNum+"c2").value;
 	
-	for(var i = 0; i<4; i++){
-		if(t[i] == ""){
-			t[i] = 0;
-		}
-		else{
-			t[i] = parseFloat(t[i]);
-		}
-	}
-	return ((t[0]*60 + t[1]) + (t[2]*60 + t[3]))/2;
+	
+	
+	var time = parseTime(minutes)*60 + parseTime(seconds);
+
+	return time;
 }
 function getImpromptuTime(speakerNum){
-	//array t: minute 1, second 1, minute2 , second 2
-	var t = [document.getElementById("T1r"+speakerNum+"c3").value, 
-			document.getElementById("T1r"+speakerNum+"c4").value, 
-			document.getElementById("T2r"+speakerNum+"c3").value, 
-			document.getElementById("T2r"+speakerNum+"c4").value];
+	var minutes = document.getElementById("T1r"+speakerNum+"c3").value;
+	var seconds	= document.getElementById("T1r"+speakerNum+"c4").value;
 	
-	for(var i = 0; i<4; i++){
-		if(t[i] == ""){
-			t[i] = 0;
-		}
-		else{
-			t[i] = parseFloat(t[i]);
-		}
-	}
-	return ((t[0]*60 + t[1]) + (t[2]*60 + t[3]))/2;
+	time = parseTime(minutes)*60 + parseTime(seconds);
+
+	return time;
 }
 function getCell(sheet, row, col){  
         var id = sheet+"R"+row+"C"+col;
@@ -232,4 +217,9 @@ function getCell(sheet, row, col){
 function weightedValue (score, weight){
   wtdScore = score*weight/10;
   return wtdScore;
+}
+function parseTime(n){
+	n = parseFloat(n);
+	if(isNaN(n)) return 0;
+	else return n;
 }
