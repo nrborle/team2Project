@@ -21,3 +21,6 @@ CREATE TABLE user (
 	permissions boolean,
 	PRIMARY KEY (username)
 );
+
+INSERT INTO user
+VALUES ("moot", "moot", 1);
